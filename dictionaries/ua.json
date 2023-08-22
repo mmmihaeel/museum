@@ -1,0 +1,10 @@
+{
+  "navigation": {
+    "home": "Головна",
+    "dynasty": "Династія"
+  },
+  "pages": {
+    "home": {},
+    "dynasty": {}
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "navigation": {
+    "home": "Home",
+    "dynasty": "Dynasty"
+  },
+  "pages": {
+    "home": {},
+    "dynasty": {}
+  }
+}
