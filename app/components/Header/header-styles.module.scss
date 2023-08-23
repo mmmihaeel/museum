@@ -1,0 +1,13 @@
+// @import '../variables.scss';
+
+.header {
+    width: 100%;
+}
+.nav, .nav_list{
+    display: flex;
+    justify-content: space-between;
+}
+.nav_list{
+    width: 200px;
+    margin: 40px 45px;
+}

@@ -3,23 +3,17 @@ import { Locale } from '@/i18n.config';
 import { getDictionary } from '@/lib/dictionary';
 import LocaleSwitcher from './locale-switcher';
 import Image from 'next/image';
-import lovoImg from '../../../assets/logo.svg'
+import lovoImg from '../../assets/logo.svg';
+
+import headerStyle from './header-styles.module.scss';
 
 export default async function Header({ lang }: { lang: Locale }) {
   const { navigation } = await getDictionary(lang);
 
   return (
-    <header className=''>
-      <nav className=''>
+    <header className={headerStyle.header}>
+      <nav className={headerStyle.nav}>
         <Image src={lovoImg} alt={'logs'} /> 
-        <ul className=''>
-          <li>
-            <Link href={`/${lang}`}>{navigation.home}</Link>
-          </li>
-          <li>
-            <Link href={`/${lang}/dynasty`}>{navigation.dynasty}</Link>
-          </li>
-        </ul>
         <LocaleSwitcher />
       </nav>
     </header>

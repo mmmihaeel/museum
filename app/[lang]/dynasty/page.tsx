@@ -14,7 +14,7 @@ export default async function About({
   return (
     <section className={badScript.className}>
       <div className=''>
-        <h1 className=''>{}</h1>
+        <h1 className=''>{"Hello"}</h1>
         <p className=''>{}</p>
       </div>
     </section>
