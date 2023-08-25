@@ -9,8 +9,8 @@ import { i18n } from '@/i18n.config';
 import headerStyle from './header-styles.module.scss';
 
 const imageByLocale = {
-  ua: require("../../assets/images/ua.svg"),
-  en: require("../../assets/images/en.svg")
+  ua: require("../../assets/images/locale/ua.svg"),
+  en: require("../../assets/images/locale/en.svg")
 };
 
 export default function LocaleSwitcher() {

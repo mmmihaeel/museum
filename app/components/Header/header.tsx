@@ -3,7 +3,7 @@ import { Locale } from '@/i18n.config';
 import { getDictionary } from '@/lib/dictionary';
 import LocaleSwitcher from './locale-switcher';
 import Image from 'next/image';
-import lovoImg from '../../assets/logo.svg';
+import lovoImg from '../../assets/images/logos/logo.svg';
 
 import headerStyle from './header-styles.module.scss';
 
