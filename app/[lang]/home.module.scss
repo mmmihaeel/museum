@@ -1,0 +1,57 @@
+.container {
+  height: 1616px;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+
+ .game_background {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+  
+.train {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  z-index: 10;
+  position: relative;
+  top: 45.4%;
+}
+
+.train_head, .train_car {
+  position: relative;
+}
+
+.train_head{
+  margin-right: -102px;
+}
+.train_car_box{
+  position: absolute;
+  top: 50%;
+  left: 26.6%;
+  width: 465px;
+  height: 70px;
+  border-radius: 15px;
+  background-color: #C4C4C4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.train_car_link{
+  color: #9D072B;
+  text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.25);
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 33px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  cursor: pointer;
+
+  &:hover{
+    text-decoration: none;
+    user-select: none;
+  }
+}
