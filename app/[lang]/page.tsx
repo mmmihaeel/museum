@@ -1,19 +1,16 @@
 "use client";
+
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import gameStyles from './home.module.scss';
 import { TrainHead, TrainCar } from '../components/Train';
 import { GameBackground } from '../components/GameBackground';
 import { Locale } from '@/i18n.config';
 import { IPage } from '../interfaces/page.interface';
+import handImage from '../assets/images/game/hand.svg';
 
-export default function Home({
-  params: { lang }
-}: {
-  params: { lang: Locale }
-}) {
-  console.log(lang);
-
+export default function Home({ params: { lang } }: { params: { lang: Locale } }) {
   const pages: Array<IPage> = [
     { title: "Династя Поппера", link: "popper-dynasty" },
     { title: "Найсаріша Вузькоколійка", link: "oldest-track" },
@@ -21,55 +18,43 @@ export default function Home({
     { title: "Резиденція барона", link: "residence-of-a-baron" },
   ];
 
-  const [isDragging, setDragging] = useState(false);
-  const [initialX, setInitialX] = useState(0);
-  const [trainPosition, setTrainPosition] = useState(0);
+  const [dragState, setDragState] = useState({
+    isDragging: false,
+    initialX: 0,
+    trainPosition: 0,
+  });
 
-  //handling desktop events
-  const handleMouseDown = (event: React.MouseEvent) => {
-    setDragging(true);
-    setInitialX(event.clientX - trainPosition);
-  };
-  const handleMouseUp = () => {
-    setDragging(false);
-  };
-  const handleMouseMove = (event: React.MouseEvent) => {
-    if (!isDragging) return;
-    const newTrainPosition = event.clientX - initialX;
-    setTrainPosition(newTrainPosition);
-  };
-  //handling desktop events
-
-  // handling mobile events
-  const handleTouchStart: React.TouchEventHandler<HTMLDivElement> = (event) => {
-    setDragging(true);
-    setInitialX(event.touches[0].clientX - trainPosition);
-  };
-  const handleTouchEnd = () => {
-    setDragging(false);
-  };
-  const handleTouchMove: React.TouchEventHandler<HTMLDivElement> = (event) => {
-    if (!isDragging) return;
-    const newTrainPosition = event.touches[0].clientX - initialX;
-    setTrainPosition(newTrainPosition);
-  };
-  // handling mobile events
-
-  const trainStyles = {
-    transform: `translateX(${trainPosition}px)`,
+  const handleDragStart = (event: React.MouseEvent | React.TouchEvent) => {
+    const clientX = 'touches' in event ? event.touches[0].clientX : event.clientX;
+    setDragState({
+      ...dragState,
+      isDragging: true,
+      initialX: clientX - dragState.trainPosition,
+    });
   };
 
-  return (<>
+  const handleDragMove = (event: React.MouseEvent | React.TouchEvent) => {
+    if (!dragState.isDragging) return;
+    const clientX = 'touches' in event ? event.touches[0].clientX : event.clientX;
+    const newTrainPosition = clientX - dragState.initialX;
+    setDragState({ ...dragState, trainPosition: newTrainPosition });
+  };
+
+  const handleDragEnd = () => setDragState({ ...dragState, isDragging: false });
+
+  const handleClick = () => setDragState({ ...dragState, trainPosition: dragState.trainPosition - 1068 });
+
+  return (
     <div className={gameStyles.container}>
       <div
         className={gameStyles.train}
-        style={trainStyles}
-        onMouseDown={handleMouseDown}
-        onMouseUp={handleMouseUp}
-        onMouseMove={handleMouseMove}
-        onTouchStart={handleTouchStart}
-        onTouchEnd={handleTouchEnd}
-        onTouchMove={handleTouchMove}
+        style={{ transform: `translateX(${dragState.trainPosition}px)` }}
+        onMouseDown={handleDragStart}
+        onMouseMove={handleDragMove}
+        onMouseUp={handleDragEnd}
+        onTouchStart={handleDragStart}
+        onTouchMove={handleDragMove}
+        onTouchEnd={handleDragEnd}
       >
         <div className={gameStyles.train_head}>
           <TrainHead />
@@ -86,7 +71,9 @@ export default function Home({
         ))}
       </div>
       <GameBackground className={gameStyles.game_background} />
+      <div className={gameStyles.hand} onClick={handleClick}>
+        <Image src={handImage} alt={"hand"}></Image>
+      </div>
     </div>
-  </>
   );
 }

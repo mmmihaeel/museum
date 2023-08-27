@@ -19,6 +19,7 @@
   z-index: 10;
   position: relative;
   top: 45.4%;
+  transition: all .2s linear;
 }
 
 .train_head, .train_car {
@@ -49,9 +50,17 @@
   font-weight: 600;
   line-height: normal;
   cursor: pointer;
+  user-select: none;
 
   &:hover{
     text-decoration: none;
-    user-select: none;
   }
+}
+
+.hand {
+  position: absolute;
+  bottom: 45px;
+  right: 45px;
+  width: 72px;
+  height: 84px;
 }
