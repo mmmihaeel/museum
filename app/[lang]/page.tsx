@@ -1,11 +1,11 @@
 "use client";
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { IPage } from '../interfaces/page';
 import gameStyles from './home.module.scss';
 import { TrainHead, TrainCar } from '../components/Train';
 import { GameBackground } from '../components/GameBackground';
 import { Locale } from '@/i18n.config';
+import { IPage } from '../interfaces/page.interface';
 
 export default function Home({
   params: { lang }
@@ -13,6 +13,7 @@ export default function Home({
   params: { lang: Locale }
 }) {
   console.log(lang);
+
   const pages: Array<IPage> = [
     { title: "Династя Поппера", link: "popper-dynasty" },
     { title: "Найсаріша Вузькоколійка", link: "oldest-track" },
