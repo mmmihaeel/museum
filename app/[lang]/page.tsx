@@ -5,8 +5,14 @@ import { IPage } from '../interfaces/page';
 import gameStyles from './home.module.scss';
 import { TrainHead, TrainCar } from '../components/Train';
 import { GameBackground } from '../components/GameBackground';
+import { Locale } from '@/i18n.config';
 
-function Home() {
+export default function Home({
+  params: { lang }
+}: {
+  params: { lang: Locale }
+}) {
+  console.log(lang);
   const pages: Array<IPage> = [
     { title: "Династя Поппера", link: "popper-dynasty" },
     { title: "Найсаріша Вузькоколійка", link: "oldest-track" },
@@ -83,5 +89,3 @@ function Home() {
   </>
   );
 }
-
-export default Home;
