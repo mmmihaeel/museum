@@ -1,6 +1,4 @@
 "use client";
-
-import Head from 'next/head';
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { IPage } from '../interfaces/page';
@@ -20,26 +18,41 @@ function Home() {
   const [initialX, setInitialX] = useState(0);
   const [trainPosition, setTrainPosition] = useState(0);
 
+  //handling desktop events
   const handleMouseDown = (event: React.MouseEvent) => {
     setDragging(true);
     setInitialX(event.clientX - trainPosition);
   };
-
   const handleMouseUp = () => {
     setDragging(false);
   };
-
   const handleMouseMove = (event: React.MouseEvent) => {
     if (!isDragging) return;
     const newTrainPosition = event.clientX - initialX;
     setTrainPosition(newTrainPosition);
   };
+  //handling desktop events
+
+  // handling mobile events
+  const handleTouchStart: React.TouchEventHandler<HTMLDivElement> = (event) => {
+    setDragging(true);
+    setInitialX(event.touches[0].clientX - trainPosition);
+  };
+  const handleTouchEnd = () => {
+    setDragging(false);
+  };
+  const handleTouchMove: React.TouchEventHandler<HTMLDivElement> = (event) => {
+    if (!isDragging) return;
+    const newTrainPosition = event.touches[0].clientX - initialX;
+    setTrainPosition(newTrainPosition);
+  };
+  // handling mobile events
 
   const trainStyles = {
     transform: `translateX(${trainPosition}px)`,
   };
 
-  return (
+  return (<>
     <div className={gameStyles.container}>
       <div
         className={gameStyles.train}
@@ -47,6 +60,9 @@ function Home() {
         onMouseDown={handleMouseDown}
         onMouseUp={handleMouseUp}
         onMouseMove={handleMouseMove}
+        onTouchStart={handleTouchStart}
+        onTouchEnd={handleTouchEnd}
+        onTouchMove={handleTouchMove}
       >
         <div className={gameStyles.train_head}>
           <TrainHead />
@@ -56,14 +72,15 @@ function Home() {
             <TrainCar />
             <div className={gameStyles.train_car_box}>
               <Link className={gameStyles.train_car_link} href={page.link}>
-              {page.title}
-            </Link>
+                {page.title}
+              </Link>
             </div>
           </div>
         ))}
       </div>
       <GameBackground className={gameStyles.game_background} />
     </div>
+  </>
   );
 }
 

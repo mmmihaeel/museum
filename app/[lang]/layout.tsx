@@ -28,11 +28,11 @@ export default function RootLayout({
   params: { lang: Locale };
 }) {
   return (
-      <html lang={params.lang}>
-        <body className={`${montserratAlternates.className} $`}>
-          <Header lang={params.lang} />
-          <main>{children}</main>
-        </body>
-      </html>
+    <html lang={params.lang}>
+      <body className={`${montserratAlternates.className} $`}>
+        <Header lang={params.lang} />
+        <main>{children}</main>
+      </body>
+    </html>
   );
 }

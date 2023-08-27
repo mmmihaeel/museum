@@ -2,6 +2,7 @@
 const nextConfig = {
     experimental: {
         appDir: true,
+        serverActions: true,
     },
     swcMinify: true,
     devIndicators: {

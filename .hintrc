@@ -9,9 +9,11 @@
       {
         "ignore": [
           "text-decoration-skip-ink",
-          "-webkit-tap-highlight-color"
+          "-webkit-tap-highlight-color",
+          "user-select"
         ]
       }
-    ]
+    ],
+    "no-inline-styles": "off"
   }
 }

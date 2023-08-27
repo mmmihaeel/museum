@@ -347,11 +347,9 @@ dl {
 }
 
 body {
-    // background: linear-gradient(68.43deg, rgba(226, 227, 227, 0.6) 101.83%, rgba(165, 205, 168, 0.3) 23.23%), #E1E2E1;
-    //background: linear-gradient(68.43deg, rgba(226, 227, 227, 0.6) 51.83%, rgba(165, 205, 168, 0.3) 76.23%), #E1E2E1;
     width: 100%;
     height: 100vh;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 button {
