@@ -6,6 +6,17 @@ import { i18n } from '@/i18n.config';
 import { match as matchLocale } from '@formatjs/intl-localematcher';
 import Negotiator from 'negotiator';
 
+function isStaticAssets(path: string) {
+  const imageExtensions = ['.png', '.gif', '.svg', '.jpg', '.mov', '.jpeg', '.webm', '.json', '.js', '.css'];
+  const lowerPath = path.toLowerCase();
+  for (const ext of imageExtensions) {
+    if (lowerPath.endsWith(ext)) {
+      return true;
+    }
+  }
+  return false;
+}
+
 function getLocale(request: NextRequest): string | undefined {
   const negotiatorHeaders: Record<string, string> = {};
   request.headers.forEach((value, key) => (negotiatorHeaders[key] = value));
@@ -25,8 +36,9 @@ export function middleware(request: NextRequest) {
     locale => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
   );
 
-  if (pathnameIsMissingLocale) {
+  if (pathnameIsMissingLocale && !isStaticAssets(request.nextUrl.pathname)) {
     const locale = getLocale(request);
+    console.log(request.nextUrl.pathname);
     return NextResponse.redirect(
       new URL(
         `/${locale}${pathname.startsWith('/') ? '' : '/'}${pathname}`,
