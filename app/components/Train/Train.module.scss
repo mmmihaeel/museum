@@ -19,6 +19,7 @@
   z-index: 10;
   position: relative;
   top: 45.4%;
+  // transition: all .2s linear;
 }
 
 .train_head,
@@ -65,4 +66,38 @@
   right: 45px;
   width: 72px;
   height: 84px;
+}
+
+.wheel {
+  width: 130px;
+  height: 130px;
+  z-index: 10;
+  position: absolute;
+  bottom: -15px;
+}
+.wheel_line, .wheel_line_2{
+  width: 225px;
+  height: 7px;
+  position: absolute;
+  bottom: 46px;
+  z-index: 20;
+  background: #C4C4C4;
+}
+.wheel_line{
+  left: 280px;
+}
+.wheel_line_2{
+  left: 650px;
+}
+.wheel_1 {
+  left: 215px;
+}
+.wheel_2 {
+  left: 440px;
+}
+.wheel_3 {
+  left: 585px;
+}
+.wheel_4 {
+  left: 810px;
 }
