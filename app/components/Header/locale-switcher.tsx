@@ -35,8 +35,6 @@ export default function LocaleSwitcher() {
               <Image
                   src={imageByLocale[locale]}
                   alt={"locale"}
-                  width={90}
-                  height={61}
               />
             </Link>
           </li>

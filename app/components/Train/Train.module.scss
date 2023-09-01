@@ -1,42 +1,61 @@
 .container {
-  height: 1616px;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
   position: relative;
-  z-index: 0;
   overflow: hidden;
 }
 
-.game_background {
+.home_bg {
+  height: 100%;
   position: absolute;
   top: 0;
-  width: 100%;
-  height: 100%;
 }
 
 .train {
+  height: 45.23%;
   display: flex;
-  flex-direction: row;
   align-items: flex-end;
   z-index: 10;
   position: relative;
-  top: 45.4%;
+  top: 45%;
+  left: 60vw;
   // transition: all .2s linear;
 }
-
+.no_user_drag {
+  -webkit-user-drag: none; /* Для Safari */
+  user-drag: none; /* Заборонити перетягування */
+}
 .train_head,
 .train_car {
   position: relative;
 }
 
 .train_head {
-  margin-right: -102px;
+  height: 100%;
+}
+
+.train_car {
+  height: 59.4%;
+  bottom: -1%;
+}
+
+.train_head svg,
+.train_car svg {
+  height: 100%;
+}
+
+.train_head {
+  margin-right: -1.92%;
 }
 
 .train_car_box {
   position: absolute;
   top: 50%;
   left: 26.6%;
-  width: 465px;
-  height: 70px;
+  width: 43.25%;
+  height: 15.74%;
   border-radius: 15px;
   background-color: #C4C4C4;
   display: flex;
@@ -48,12 +67,12 @@
   color: #9D072B;
   text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.25);
   font-family: 'Montserrat Alternates', sans-serif;
-  font-size: 33px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   cursor: pointer;
   user-select: none;
+  font-size: 2vh;
 
   &:hover {
     text-decoration: none;
@@ -62,42 +81,56 @@
 
 .hand {
   position: absolute;
-  bottom: 45px;
-  right: 45px;
-  width: 72px;
-  height: 84px;
+  height: 8%;
+  bottom: 0;
+  right: 0;
+  z-index: 20;
+}
+.hand svg {
+  height: 100%;
 }
 
 .wheel {
-  width: 130px;
-  height: 130px;
+  height: 16.6%;
   z-index: 10;
   position: absolute;
-  bottom: -15px;
+  bottom: -0.5%;
 }
-.wheel_line, .wheel_line_2{
-  width: 225px;
-  height: 7px;
+
+.wheel svg {
+  height: 100%;
+}
+
+.wheel_line,
+.wheel_line_2 {
+  width: 3.7%;
+  height: 0.96%;
   position: absolute;
-  bottom: 46px;
+  bottom: 7.2%;
   z-index: 20;
   background: #C4C4C4;
 }
-.wheel_line{
-  left: 280px;
+
+.wheel_line {
+  left: 5.5%;
 }
-.wheel_line_2{
-  left: 650px;
+
+.wheel_line_2 {
+  left: 12.3%;
 }
+
 .wheel_1 {
-  left: 215px;
+  left: 4.3%;
 }
+
 .wheel_2 {
-  left: 440px;
+  left: 8.16%;
 }
+
 .wheel_3 {
-  left: 585px;
+  left: 11.1%;
 }
+
 .wheel_4 {
-  left: 810px;
+  left: 14.96%;
 }
