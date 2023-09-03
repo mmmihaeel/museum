@@ -23,6 +23,10 @@
   left: 60vw;
   // transition: all .2s linear;
 }
+.smoke{
+  position: absolute;
+  background-blend-mode: screen;
+}
 .no_user_drag {
   -webkit-user-drag: none; /* Для Safari */
   user-drag: none; /* Заборонити перетягування */

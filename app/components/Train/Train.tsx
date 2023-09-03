@@ -4,7 +4,8 @@ import React, { useState, useRef, useCallback } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import gameStyles from './Train.module.scss';
-import { TrainHead, TrainCar, Wheel, Hand } from './TrainComponents';
+import { TrainHead, TrainCar, Wheel } from './TrainComponents';
+import Hand from '../Hand/Hand';
 import { IPage } from '../../interfaces/page.interface';
 import { DictionaryData } from '@/lib/dictionary';
 import HomeBg from '../../assets/images/game/home-background.svg';
@@ -56,7 +57,10 @@ const Train: React.FC<props> = ({ localizations }: props) => {
   }, [dragState.initialX, dragState.isDragging, wheelRefs]);
 
   const handleDragEnd = useCallback(() => setDragState(prevState => ({ ...prevState, isDragging: false })), []);
-  const handleClick = useCallback(() => setDragState(prevState => ({ ...prevState, trainPosition: prevState.trainPosition - (carriage.current ? carriage.current.offsetWidth : 1068) })), []);
+  const handleClick = useCallback(() => {
+    setDragState(prevState => ({ ...prevState, trainPosition: prevState.trainPosition - (carriage.current ? carriage.current.offsetWidth : 1068) }))
+    train.current && (train.current.style.transition = 'all .4s', setTimeout(() => train.current && (train.current.style.transition = 'none'), 400));
+  }, []);
 
   return (
     <div className={gameStyles.container}>
@@ -95,9 +99,7 @@ const Train: React.FC<props> = ({ localizations }: props) => {
           </div>
         ))}
       </div>
-      <div className={gameStyles.hand} onClick={handleClick}>
-        <Hand />
-      </div>
+      <Hand className={gameStyles.hand} onClick={handleClick} />
       <Image className={gameStyles.home_bg} src={HomeBg} alt={'home page background'} />
     </div>
   );

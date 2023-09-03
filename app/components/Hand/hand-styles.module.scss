@@ -1,0 +1,21 @@
+.hand {
+    transform: translateX(0);
+    animation: 4s linear infinite translateHand;
+    animation-delay: 0s, 1s;
+}
+#arrow {
+    position: absolute;
+    right: 0;
+}
+
+@keyframes translateHand {
+    5% {
+        transform: translate(-10%, 2%) rotate(-8deg);
+    }
+    10% {
+        transform: translateX(0);
+    }
+    75% {
+        transform: translateX(0);
+    }
+}
