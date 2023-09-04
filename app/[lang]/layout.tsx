@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang={params.lang}>
       <body className={`${montserratAlternates.className} $`}>
-        <main>{children}</main>
+          {children}
       </body>
     </html>
   );
