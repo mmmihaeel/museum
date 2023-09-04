@@ -13,6 +13,10 @@ const nextConfig = {
     reactStrictMode: false,
     compress: true,
     poweredByHeader: false,
+    images: {
+        loader: 'custom',
+        loaderFile: './lib/customImgLoader.ts',
+    },
     webpack(config) {
         return config;
     }
