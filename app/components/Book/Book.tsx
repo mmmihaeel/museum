@@ -13,8 +13,8 @@ type props = {
 };
 
 const options = {
-    width: 800,
-    height: 600,
+    width: 980,
+    height: 630,
     autoCenter: true,
     display: "double",
     acceleration: true,

@@ -19,4 +19,15 @@
 }
 .book_page{
     position: absolute;
+    top: 3%;
+    left: 5.2%;
+}
+.pageBg{
+    width: 100%;
+}
+.odd {
+    transform: translateY(-2px);
+}
+.event {
+    transform: translateY(0);
 }

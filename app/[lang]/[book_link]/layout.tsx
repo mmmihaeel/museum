@@ -18,9 +18,6 @@ export default function BookLayout({
 }) {
   return (<>
     <html lang={params.lang}>
-      {/* <head>
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/turn.js/4/turn.css"></link>
-      </head> */}
       <body className={`${badScript.className}`}>
         <main className={bookStyles.main}>
           <div className={bookStyles.container}>

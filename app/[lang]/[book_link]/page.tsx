@@ -4,23 +4,41 @@ import { DictionaryData, getDictionary } from '@/lib/dictionary';
 import dynamic from 'next/dynamic';
 const Book = dynamic(() => import('../../components/Book/Book'), { ssr: false });
 import Image from 'next/image';
+import pageBg from "../../assets/images/book/page.png";
+import pageBg2 from "../../assets/images/book/page-2.png";
+import bookStyles from './book.module.scss';
 
 const pages = [
-  "https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/01.jpg",
-  "https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/02.jpg",
-  "https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/03.jpg",
-  "https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/04.jpg",
-  "https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/05.jpg",
-  "https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/06.jpg",
+  pageBg,
+  pageBg,
+  pageBg,
+  pageBg,
+  pageBg,
+  pageBg,
+  pageBg,
+  pageBg,
+  pageBg,
+  pageBg,
+  pageBg,
+  pageBg,
+  pageBg,
+  pageBg,
+
 ];
 
 
 export default async function Page({ params }: { params: { lang: Locale, book_link: string, }, }) {
   const localizations = await getDictionary(params.lang) as DictionaryData;
   console.log(params.book_link);
-  return (<Book localizations={localizations}>{pages.map((page, index) => (
-    <div key={index} className="page">
-      <Image src={page} alt="" width={200} height={200} />
-    </div>
-  ))}</Book>);
+  return (
+    <Book localizations={localizations}>
+      {pages.map((page, index) => (
+      <div key={index} className={`page ${index}`}>
+        <Image 
+        className={`${bookStyles.pageBg} ${index % 2 === 0 ? bookStyles.odd : bookStyles.event}`} 
+        src={index % 2 === 0 ? pageBg2 : pageBg} alt="page background" />
+      </div>
+    ))}
+  </Book>
+  );
 }
