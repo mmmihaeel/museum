@@ -31,8 +31,8 @@ export default function BookLayout({
           </div>
         </main>
       </body >
-
-      {/* <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/4/turn.js"></script> */}
+      <script async src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+      <script async src="https://unpkg.com/turn.js@latest"></script>
     </html >
   </>
   );

@@ -5,7 +5,7 @@
 import React, { useEffect, useRef } from 'react';
 import $ from 'jquery';
 import { DictionaryData } from '@/lib/dictionary';
-import "turn.js";
+import "../../../lib/turn";
 
 type props = {
     localizations: DictionaryData;
@@ -33,23 +33,20 @@ const Book: React.FC<props> = (props) => {
     const { localizations, children } = props;
     const elRef = useRef<HTMLDivElement | null>(null);
 
-    // useEffect(() => {
-
-    //     if (elRef.current) {
-    //         //@ts-ignore
-    //         console.log($(elRef.current).turn);
-    //         $(elRef.current).turn({ ...options });
-
-
-    //         document.addEventListener("keydown", handleKeyDown, false);
-
-    //         return () => {
-    //             //@ts-ignore
-    //             $(elRef.current!).turn("destroy").remove();
-    //             document.removeEventListener("keydown", handleKeyDown, false);
-    //         };
-    //     }
-    // }, []);
+    useEffect(() => {
+        $(document).ready(function () {
+            if (elRef.current) {
+                //@ts-ignore
+                $(elRef.current).turn({ ...options });
+                document.addEventListener("keydown", handleKeyDown, false);
+                return () => {
+                    //@ts-ignore
+                    $(elRef.current!).turn("destroy").remove();
+                    document.removeEventListener("keydown", handleKeyDown, false);
+                };
+            }
+        });
+    }, []);
 
 
     const handleKeyDown = (event: KeyboardEvent) => {
