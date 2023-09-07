@@ -21,7 +21,7 @@ const Train: React.FC<props> = ({ localizations }: props) => {
     { title: "Туристичний маршрут", link: "tourist-track" },
     { title: "Резиденція барона", link: "residence-of-a-baron" },
   ];
-  
+
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const wheelRefs = Array.from({ length: pages.length }, () => useRef<HTMLDivElement>(null));
   const train = useRef<HTMLDivElement>(null);
@@ -68,7 +68,7 @@ const Train: React.FC<props> = ({ localizations }: props) => {
         ref={train}
         className={`${gameStyles.train} ${gameStyles.no_user_drag}`}
         style={{
-            transform: `translateX(${dragState.trainPosition}px)`,
+          transform: `translateX(${dragState.trainPosition}px)`,
         }}
         onMouseDown={handleDragStart}
         onMouseMove={handleDragMove}
@@ -76,7 +76,7 @@ const Train: React.FC<props> = ({ localizations }: props) => {
         onTouchStart={handleDragStart}
         onTouchMove={handleDragMove}
         onTouchEnd={handleDragEnd}
-        >
+      >
         <div className={gameStyles.train_head}>
           <TrainHead />
         </div>

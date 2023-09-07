@@ -2,8 +2,23 @@
 import type { Locale } from '@/i18n.config';
 
 export type DictionaryData = {
-  navigation: { home: string; dynasty: string };
-  pages: { home: object; dynasty: object };
+  train: {
+        museumMainTitle: string;
+        navigation: {
+            popperDynasty: string;
+            theOldestNarrowGaugeRailway: string;
+            touristRoute: string;
+            theBaronsResidence: string;
+        };
+    };
+    book: {
+        pages: {
+            popperDynasty: object;
+            theOldestNarrowGaugeRailway: object;
+            touristRoute: object;
+            theBaronsResidence: object;
+        };
+    };
 };
 
 const dictionaries = {

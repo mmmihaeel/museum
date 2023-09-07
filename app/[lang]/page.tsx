@@ -7,7 +7,6 @@ const Train = dynamic(() => import('../components/Train/Train'));
 
 export default async function Home({ params: { lang } }: { params: { lang: Locale } }) {
   const localizations = await getDictionary(lang) as DictionaryData;
-
   return (
     <>
       <Header lang={lang} />

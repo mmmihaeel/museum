@@ -8,15 +8,11 @@ const nextConfig = {
     devIndicators: {
         buildActivity: false,
     },
-    output: 'standalone',
+    //output: 'standalone',
     productionBrowserSourceMaps: false,
     reactStrictMode: false,
     compress: true,
     poweredByHeader: false,
-    images: {
-        loader: 'custom',
-        loaderFile: './lib/customImgLoader.ts',
-    },
     webpack(config) {
         return config;
     }
