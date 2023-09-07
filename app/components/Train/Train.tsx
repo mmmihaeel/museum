@@ -16,10 +16,10 @@ type props = {
 
 const Train: React.FC<props> = ({ localizations }: props) => {
   const pages: Array<IPage> = [
-    { title: "Династя Поппера", link: "popper-dynasty" },
-    { title: "Найсаріша Вузькоколійка", link: "oldest-track" },
-    { title: "Туристичний маршрут", link: "tourist-track" },
-    { title: "Резиденція барона", link: "residence-of-a-baron" },
+    { title: "Династя Поппера", link: "popper_dynasty" },
+    { title: "Найсаріша Вузькоколійка", link: "oldest_track" },
+    { title: "Туристичний маршрут", link: "tourist_track" },
+    { title: "Резиденція барона", link: "residence_of_a_baron" },
   ];
   
   // eslint-disable-next-line react-hooks/rules-of-hooks
