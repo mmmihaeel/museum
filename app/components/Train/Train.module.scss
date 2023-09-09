@@ -29,7 +29,7 @@
 }
 .no_user_drag {
   -webkit-user-drag: none; /* Для Safari */
-  user-drag: none; /* Заборонити перетягування */
+  -user-drag: none; /* Заборонити перетягування */
 }
 .train_head,
 .train_car {

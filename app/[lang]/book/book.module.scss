@@ -50,8 +50,9 @@
 .finger {
     position: absolute;
     width: 40px;
-    bottom: 3%;
+    bottom: 5%;
     right: 5.4%;
+    z-index: 30;
 }
 .close svg, .finger svg {
     width: 100%;
@@ -68,7 +69,7 @@
     
 }
 .description{
-    font-size: 16px;
+    font-size: 15px;
     color: #262626;
     font-family: 'Bad Script';
     font-style: italic;
@@ -76,6 +77,10 @@
     font-weight: 400;
     line-height: normal;
     text-align: center;
+}
+.description b {
+    font-family: 'B612 Mono';
+    font-weight: normal;
 }
 .popper_gerb{
     width: 75% !important;
@@ -92,7 +97,7 @@
         width: 49px;
     }
     .finger {
-        width: 72px;
+        width: 92px;
     }
     .description{
         font-size: 38px;

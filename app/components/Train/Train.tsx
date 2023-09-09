@@ -15,11 +15,13 @@ type props = {
 };
 
 const Train: React.FC<props> = ({ localizations }: props) => {
+  console.log(localizations.train.links);
+  const TrainData = localizations.train;
   const pages: Array<IPage> = [
-    { title: "Династя Поппера", link: "book/popper-dynasty" },
-    { title: "Найсаріша Вузькоколійка", link: "book/the-oldest-narrow-gauge-railway" },
-    { title: "Туристичний маршрут", link: "book/tourist-route" },
-    { title: "Резиденція барона", link: "book/the-barons-residence" },
+    { title: TrainData.navigation.popperDynasty, link: TrainData.links.popperDynasty },
+    { title: TrainData.navigation.theOldestNarrowGaugeRailway, link: TrainData.links.theOldestNarrowGaugeRailway },
+    { title: TrainData.navigation.touristRoute, link: TrainData.links.touristRoute },
+    { title: TrainData.navigation.theBaronsResidence, link: TrainData.links.theBaronsResidence },
   ];
 
   // eslint-disable-next-line react-hooks/rules-of-hooks
