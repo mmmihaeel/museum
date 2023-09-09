@@ -1,3 +1,5 @@
+#!/bin/bash
+
 build_dir='./build'
 
 npm run build
@@ -37,7 +39,18 @@ echo "Copied ./middleware.ts to $build_dir"
 cp "./i18n.config.ts" "$build_dir"
 echo "Copied /i18n.config.ts to $build_dir"
 
-cp "./start.sh" "$build_dir"
-echo "Copied ./start.sh command to $build_dir"
+cp "./start.bat" "$build_dir"
+echo "Copied ./start.bat command to $build_dir"
+
+cp "./open-presentation.bat" "$build_dir"
+echo "Copied ./open-presentation.bat command to $build_dir"
 
 echo "Copied all build files to $build_dir"
+
+nssm install museumPresentation "D:\Work\museum\build\start.bat"
+
+nssm start museumPresentation
+
+nssm install museumPresentationOpen "D:\Work\museum\build\open-presentation.bat"
+
+nssm start museumPresentationOpen
