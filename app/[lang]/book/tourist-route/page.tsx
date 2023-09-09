@@ -36,7 +36,7 @@ export default async function Page({ params }: { params: { lang: Locale }, }) {
       <div className={`page ${bookStyles.page}`}>
         <RightPage className={bookStyles.page_bg} />
         <div className={bookStyles.content}>
-          <video controls width="460" height="330">
+          <video controls className={bookStyles.track_video}>
             <source src="/videos/touristRoute-1.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
@@ -86,7 +86,7 @@ export default async function Page({ params }: { params: { lang: Locale }, }) {
       <div className={`page ${bookStyles.page}`}>
         <RightPage className={bookStyles.page_bg} />
         <div className={bookStyles.content}>
-          <video controls width="240" height="330">
+          <video controls className={bookStyles.video_vertical}  poster="/videos/tourist-route-poster.png">
             <source src="/videos/touristRoute-2.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>

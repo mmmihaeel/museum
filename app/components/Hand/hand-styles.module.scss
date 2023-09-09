@@ -1,7 +1,12 @@
+#swipe:hover{
+    transform: scale(1.07);
+    transition: all .2s;
+}
 .hand {
-    transform: translateX(0);
-    animation: 4s linear infinite translateHand;
+    transform: translateX(0) scale(1);
+    animation: 2s linear infinite translateHand;
     animation-delay: 0s, 1s;
+    cursor: pointer;
 }
 #arrow {
     position: absolute;
@@ -10,12 +15,12 @@
 
 @keyframes translateHand {
     5% {
-        transform: translate(-10%, 2%) rotate(-8deg);
+        transform: translate(-12%, 3%) rotate(-8deg) scale(1.05);
     }
-    10% {
-        transform: translateX(0);
+    15% {
+        transform: translateX(0) scale(1);
     }
-    75% {
-        transform: translateX(0);
+    65% {
+        transform: translateX(0) scale(1);
     }
 }

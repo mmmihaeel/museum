@@ -155,7 +155,7 @@ export default async function Page({ params }: { params: { lang: Locale }, }) {
       <div className={`page ${bookStyles.page}`}>
         <RightPage className={bookStyles.page_bg} />
         <div className={bookStyles.content}>
-          <video controls width="540" height="330">
+          <video controls className={bookStyles.track_video}>
             <source src="/videos/theOldestNarrowGaugeRailway.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>

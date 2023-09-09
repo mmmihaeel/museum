@@ -23,23 +23,14 @@
   left: 60vw;
   // transition: all .2s linear;
 }
-
-.smoke {
+.smoke{
   position: absolute;
   background-blend-mode: screen;
 }
-
 .no_user_drag {
-  -webkit-user-drag: none;
-  /* Для Safari */
-  -webkit-user-drag: none;
-  /* Заборонити перетягування */
-  user-drag: none;
-  /* Для Safari */
-  -user-drag: none;
-  /* Заборонити перетягування */
+  -webkit-user-drag: none; /* Для Safari */
+  -user-drag: none; /* Заборонити перетягування */
 }
-
 .train_head,
 .train_car {
   position: relative;
@@ -65,11 +56,11 @@
 
 .train_car_box {
   position: absolute;
-  top: 50%;
-  left: 26.6%;
-  width: 43.25%;
-  height: 15.74%;
-  border-radius: 15px;
+  top: 50.2%;
+  left: 31%;
+  width: 35.25%;
+  height: 15.2%;
+  // border-radius: 15px;
   background-color: #C4C4C4;
   display: flex;
   justify-content: center;
@@ -87,12 +78,11 @@
   user-select: none;
   font-size: 2vh;
 
-  &:hover,
-  &:focus,
-  &:active {
+  &:hover {
     text-decoration: none;
     color: #9D072B;
-    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.25);
+    transform: scale(1.05);
+    transition: all .2s;
   }
 }
 
@@ -103,7 +93,6 @@
   right: 0;
   z-index: 20;
 }
-
 .hand svg {
   height: 100%;
 }

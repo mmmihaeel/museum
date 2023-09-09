@@ -7,10 +7,10 @@ import { Bad_Script } from 'next/font/google';
 import Close from '@/app/components/Close';
 import FingerSVG from "../../assets/images/book/finger.svg";
 
-const badScript = Bad_Script({
-  subsets: ['cyrillic'],
-  weight: ['400'],
-});
+// const badScript = Bad_Script({
+//   subsets: ['cyrillic'],
+//   weight: ['400'],
+// });
 
 export default function BookLayout({
   children,
@@ -21,13 +21,13 @@ export default function BookLayout({
 }) {
   return (<>
     <html lang={params.lang}>
-      <body className={`${badScript.className}`}>
+      <body>
         <main className={bookStyles.main}>
           <div className={bookStyles.container}>
             <Image src={bookBg} className={bookStyles.book_bg} alt={'book background'} />
             <div className={bookStyles.book_page}>
               {children}
-              <Close className={bookStyles.close} />
+              <Close className={bookStyles.close} href={`/${params.lang}`} />
               <Image src={FingerSVG} alt={"swipe"} className={bookStyles.finger} />
             </div>
           </div>
