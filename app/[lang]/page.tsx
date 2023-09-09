@@ -9,7 +9,7 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
   const localizations = await getDictionary(lang) as DictionaryData;
   return (
     <>
-      <Header lang={lang} />
+      <Header />
       <Train localizations={localizations} />
     </>
   );
