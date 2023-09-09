@@ -80,66 +80,64 @@
     align-items: center;
 
 }
-<<<<<<< HEAD
 
 .description {
     font-size: 16px;
-=======
-.description{
-    font-size: 15px;
->>>>>>> 602b2bf233d9cbee3f9b7dc9ddf5198a6cb510c6
-    color: #262626;
-    font-family: 'Bad Script';
-    font-style: italic;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-align: center;
-}
-<<<<<<< HEAD
-
-.popper_gerb {
-=======
-.description b {
-    font-family: 'B612 Mono';
-    font-weight: normal;
-}
-.popper_gerb{
->>>>>>> 602b2bf233d9cbee3f9b7dc9ddf5198a6cb510c6
-    width: 75% !important;
-}
-
-.popper_baron {
-    width: 80% !important;
-}
-
-.tourist_walk {
-    width: 70% !important;
-}
-
-
-
-
-@media screen and (min-width: 1600px) {
-    .close {
-        width: 49px;
-    }
-
-    .finger {
-        width: 92px;
-    }
 
     .description {
-        font-size: 24px;
+        font-size: 15px;
+        color: #262626;
+        font-family: 'Bad Script';
+        font-style: italic;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: center;
     }
 
-    .popper_image_gerb {
-        height: 100% !important;
-    }
-}
+    .popper_gerb {
+        .description b {
+            font-family: 'B612 Mono';
+            font-weight: normal;
+        }
 
-@media screen and (min-width: 1800px) {
-    .description {
-        font-size: 30px;
+        .popper_gerb {
+            width: 75% !important;
+        }
+
+        .popper_baron {
+            width: 80% !important;
+        }
+
+        .tourist_walk {
+            width: 70% !important;
+        }
+
+
+
+
+        @media screen and (min-width: 1600px) {
+            .close {
+                width: 49px;
+            }
+
+            .finger {
+                width: 92px;
+            }
+
+            .description {
+                font-size: 24px;
+            }
+
+            .popper_image_gerb {
+                height: 100% !important;
+            }
+        }
+
+        @media screen and (min-width: 1800px) {
+            .description {
+                font-size: 30px;
+            }
+        }
     }
 }

@@ -18,7 +18,6 @@ type props = {
 
 
 const Train: React.FC<props> = ({ localizations }: props) => {
-  console.log(localizations.train.links);
   const TrainData = localizations.train;
   const pages: Array<IPage> = [
     { title: TrainData.navigation.popperDynasty, link: TrainData.links.popperDynasty },
@@ -97,7 +96,7 @@ const Train: React.FC<props> = ({ localizations }: props) => {
           <div key={index} className={gameStyles.train_car} ref={carriage}>
             <TrainCar />
             <div className={gameStyles.train_car_box}>
-              <Link className={gameStyles.train_car_link} href={page.link} style={page.link === TrainData.links.popperDynasty ? { fontSize: "calc(1.75vh)" } : {}}>
+              <Link className={gameStyles.train_car_link} href={page.link} style={page.link === TrainData.links.theOldestNarrowGaugeRailway ? { fontSize: "calc(1.75vh)" } : {}}>
                 {page.title}
               </Link>
             </div>
