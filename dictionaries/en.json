@@ -3,62 +3,68 @@
     "museumMainTitle": "A Historical Journey on the Vyhoda Narrow Gauge Railway",
     "navigation": {
       "popperDynasty": "Popper Dynasty",
-      "theOldestNarrowGaugeRailway": "The Oldest Narrow Gauge Railway",
+      "theOldestNarrowGaugeRailway": "The Oldest Railway",
       "touristRoute": "Tourist Route",
       "theBaronsResidence": "The Baron's Residence"
+    },
+    "links": {
+      "popperDynasty": "en/book/popper-dynasty",
+      "theOldestNarrowGaugeRailway": "en/book/the-oldest-narrow-gauge-railway",
+      "touristRoute": "en/book/tourist-route",
+      "theBaronsResidence": "en/book/the-barons-residence"
     }
   },
   "book": {
     "pages": {
       "popperDynasty": {
-        "1": "Leopold Freiherr Popper von Podhrágy was born on 15 February in Bytča, Slovakia. <br/> As one of the first Austrian entrepreneurs, he was engaged in the logging business in Halychyna and Hungary, laying the foundation for his huge commercial success. He was one of the richest landlords of Austria-Hungary. In 1869 he was granted the title of the Hungarian nobility and in 1882 - the Austrian nobility. <br/> In the 1860s and 1870s, he started to sell wholesale wood from Hliník (Bytča). It was used for the building and extension of the Hungarian railway. It also supplied wood for building the Suez Canal and played an important role in the manufacturing of building materials and wood in Europe.",
-        "2": "In 1873 Popper’s company established the first group out of 18 sawmills, in particular, the Evelina Steam Sawmill in Vyhoda and a water sawmill in Staryi Mizun. In the 70s and 80s of the 21st century, the Evelina Sawmill became the biggest enterprise of this kind in Halychyna. <br/> In 1883 in order to increase wood exports the Baron built a railway branch from the city of Dolyna to the Evelina Steam Sawmill. The new railway station <br/> and the post office were officially called Vyhoda. The name was later applied to the settlement which appeared around the station. Leopold Popper von Podhrágy died on 2 March in 1886 in Sanremo, Italy. He was buried at the cemetery in the village of Hliník over the Váh River",
+        "1": "Leopold Freiherr Popper von Podhrágy was born on <b>15</b> February in Bytča, Slovakia. <br/> As one of the first Austrian entrepreneurs, he was engaged in the logging business in Halychyna and Hungary, laying the foundation for his huge commercial success. He was one of the richest landlords of Austria-Hungary. In <b>1869</b> he was granted the title of the Hungarian nobility and in <b>1882</b> - the Austrian nobility. <br/> In the <b>1860</b>s and <b>1870</b>s, he started to sell wholesale wood from Hliník (Bytča). It was used for the building and extension of the Hungarian railway. It also supplied wood for building the Suez Canal and played an important role in the manufacturing of building materials and wood in Europe.",
+        "2": "In <b>1883</b> Popper’s company established the first group out of <b>18</b> sawmills, in particular, the Evelina Steam Sawmill in Vyhoda and a water sawmill in Staryi Mizun. In the <b>70</b>s and <b>80</b>s of the <b>21</b>st century, the Evelina Sawmill became the biggest enterprise of this kind in Halychyna. <br/> In <b>1883</b> in order to increase wood exports the Baron built a railway branch from the city of Dolyna to the Evelina Steam Sawmill. The new railway station <br/> and the post office were officially called Vyhoda. The name was later applied to the settlement which appeared around the station. Leopold Popper von Podhrágy died on <b>2</b> March in <b>1886</b> in Sanremo, Italy. He was buried at the cemetery in the village of Hliník over the Váh River",
         "3": "Baron Leopold Popper (Resource <a href='http://mek.oszk.hu/16300/16323'>http://mek.oszk.hu/16300/16323)</a>",
         "4": "Baron Popper’s coat of arms(Resource: <a href='http://www.novanobilitas.eu/rod/popper-z-podhragy'>http://www.novanobilitas.eu/rod/popper-z-podhragy))</a>",
-        "5": "Baron’s estate in Bytča on the postcard of the year 1899. “Báro Popper <br/> Armin kastélya“",
-        "6": "Baron Leopold Popper von Podhrágy’s tomb in <br/> the village of Hliník over the Váh River. Photo courtesy of Z. Grúňová, 07/2018",
-        "7": "Armin Popper (full name Armin Hermann Popper von Podhrágy) was born on September 8,1860 in Kotešová as a younger son of Baron Leopold Popper von Podhrágy and his second wife. He studied law and humanities at the universities of Vienna, Budapest and Heidelberg. In 1885 he received a doctorate degree.<br/> After the death of Leopold Popper he continued his father’s legacy, developing the logging and process industries.<br/> In 1890 his company laid a narrow gauge railway track which connected the steam sawmillin Vyhoda with the water sawmill in Staryi Mizun.<br/> Armin Hermann Popper von Podhrágy died in 1924",
+        "5": "Baron’s estate in Bytča on the postcard of the year <b>1899</b>. “Báro Popper <br/> Armin kastélya“",
+        "6": "Baron Leopold Popper von Podhrágy’s tomb in <br/> the village of Hliník over the Váh River. Photo courtesy of Z. Grúňová, <b>07/2018</b>",
+        "7": "Armin Popper (full name Armin Hermann Popper von Podhrágy) was born on September 8, <b>1860</b> in Kotešová as a younger son of Baron Leopold Popper von Podhrágy and his second wife. He studied law and humanities at the universities of Vienna, Budapest and Heidelberg. In <b>1885</b> he received a doctorate degree.<br/> After the death of Leopold Popper he continued his father’s legacy, developing the logging and process industries.<br/> In <b>1890</b> his company laid a narrow gauge railway track which connected the steam sawmillin Vyhoda with the water sawmill in Staryi Mizun.<br/> Armin Hermann Popper von Podhrágy died in <b>1924</b>",
         "8": "Baron Armin Popper"
       },
       "theOldestNarrowGaugeRailway": {
-        "1": "The oldest narrow gauge railway in the Carpathians was laid by Baron Armin Popper’s company in 1890. It spread only over three kilometers from the steam sawmill in Vyhoda to the water sawmill in Staryi Mizun. This railway worked using horse traction - logs were loaded onto platforms which were drawn on rails by horses. The building of such a narrow gauge railway resulted from economic factors because it was cheaper than the usual one. The width of the railway was 750 mm. Through time, the manufacturing of steam trains, which were used for narrow gauge railways, changed from horse traction to steam.",
-        "2": "In 1913 after the long process of project development, approvements and value assessment the building of the narrow gauge railway along the Svicha River from Vyhoda to the settlement of Liudvykivka near the village of Myslivka started. It was constructed by a German company called Orenstein & Koppel. However, World War I interrupted the process. The restoration and further development of the narrow gauge railway started after the fall of the Austrian Empire and the establishment of power of the Polish Rzeczpospolita in 1918. The sudden death of Baron Armin Popper in 1924 halted building for a short time. However, later, his company was transferred to the British company called Silvinia Land und Forstwirtschaft, Wygoda, which continued the extension of the narrow gauge railway and its infrastructure. By 1939 the total length of the railway was 65 kilometers. There were routes from Vyhoda to Solotvynskyi (along the River Mizunka) and Beskydskyi (along the River Svicha) Mindunok1.",
-        "3": "After World War II the two narrow gauge railways were combined into one and the active building of the branches was started. The railway length reached 170 km.<br/>In the 1970s and 1980s, the logging volumes decreased, and the railway started to fall into decline. At the beginning of 1990, the railway length was 135 km.<br/>In 2000 the Uniplyt Woodworking Enterprise restored the Mizun branch of the narrow gauge railway which is still functioning today. Besides its main aim - wood transportation - the narrow gauge railway is used as a tourist attraction called the Carpathian Tram. The total length of the railway with its branches is 58 km, but only the first 15 km is used for tourist trips.",
+        "1": "The oldest narrow gauge railway in the Carpathians was laid by Baron Armin Popper’s company in <b>1890</b>. It spread only over three kilometers from the steam sawmill in Vyhoda to the water sawmill in Staryi Mizun. This railway worked using horse traction - logs were loaded onto platforms which were drawn on rails by horses. The building of such a narrow gauge railway resulted from economic factors because it was cheaper than the usual one. The width of the railway was <b>750</b> mm. Through time, the manufacturing of steam trains, which were used for narrow gauge railways, changed from horse traction to steam.",
+        "2": "In <b>1913</b> after the long process of project development, approvements and value assessment the building of the narrow gauge railway along the Svicha River from Vyhoda to the settlement of Liudvykivka near the village of Myslivka started. It was constructed by a German company called Orenstein & Koppel. However, World War I interrupted the process. The restoration and further development of the narrow gauge railway started after the fall of the Austrian Empire and the establishment of power of the Polish Rzeczpospolita in <b>1918</b>. The sudden death of Baron Armin Popper in <b>1924</b> halted building for a short time. However, later, his company was transferred to the British company called Silvinia Land und Forstwirtschaft, Wygoda, which continued the extension of the narrow gauge railway and its infrastructure. By <b>1939</b> the total length of the railway was <b>65</b> kilometers. There were routes from Vyhoda to Solotvynskyi (along the River Mizunka) and Beskydskyi (along the River Svicha) Mindunok1.",
+        "3": "After World War <b>II</b> the two narrow gauge railways were combined into one and the active building of the branches was started. The railway length reached <b>170</b> km.<br/>In the <b>1970</b>s and <b>1980</b>s, the logging volumes decreased, and the railway started to fall into decline. At the beginning of <b>1990</b>, the railway length was <b>135</b> km.<br/>In <b>2000</b> the Uniplyt Woodworking Enterprise restored the Mizun branch of the narrow gauge railway which is still functioning today. Besides its main aim - wood transportation - the narrow gauge railway is used as a tourist attraction called the Carpathian Tram. The total length of the railway with its branches is <b>58</b> km, but only the first <b>15</b> km is used for tourist trips.",
         "4": "Scheme of Vyhoda narrow gauge railway (Resource:  <br/> Wendelin W. Karpatendampf)",
-        "5": "Vyhoda. General view. Baron Leopold Popper’s distilling plant and steam sawmill (postcard issued by Majer Gartenberg, Vyhoda,1906). Photo courtesy of Mykola Rudevych.",
-        "6": "Sawmill in Vyhoda, the beginning of the 20th century.",
-        "7": "Staryi Mizun. Water sawmill (the photo was taken by Stanislaw Skotnicki, postcard issued by Kolo Twa.Tantrzanskiego, Dolyna. Printed, Krakow, Akropol, 1930) Collection: Library Polona.",
-        "8": "Vyhoda. Building of the bridge and the narrow gauge railway (photo taken in 1920). Photo courtesy of Mykhailo Matseliukh.",
-        "9": "Vyhoda (photo taken in 1920). Photo courtesy of B. Pokropinskyi.",
-        "10": "Vyhoda. Railway bridge across the River Svicha (postcard issued by Zaklad Graficzny Hegedüs, Lviv, 1928). Postcard courtesy of Mykola Rudevych.",
-        "11": "Dolyna Povit, narrow gauge railway (postcard issued in 1930). Collection: Library Polona. ",
-        "12": "Wood transportation by narrow gauge railway of the Sylvinia Company (postcard issued in 1930). Collection: Library Polona",
-        "13": "Vyhoda. Loggers in the background of the steam train (photo taken in 1930). Photo courtesy of Mykola Rudevych.",
-        "14": "К-4-558 in Vyhoda. Photo taken in 1956. Photo courtesy of I. Ziatiuk.",
-        "15": "Photo taken in 1956. Photo courtesy of I. Ziatiuk.",
-        "16": "Wood transportation. Video made in 2012."
+        "5": "Vyhoda. General view. Baron Leopold Popper’s distilling plant and steam sawmill (postcard issued by Majer Gartenberg, Vyhoda, <b>1906</b>). Photo courtesy of Mykola Rudevych.",
+        "6": "Sawmill in Vyhoda, the beginning of the <b>20th</b> century.",
+        "7": "Staryi Mizun. Water sawmill (the photo was taken by Stanislaw Skotnicki, postcard issued by Kolo Twa.Tantrzanskiego, Dolyna. Printed, Krakow, Akropol, <b>1930</b>) Collection: Library Polona.",
+        "8": "Vyhoda. Building of the bridge and the narrow gauge railway (photo taken in <b>1920</b>). Photo courtesy of Mykhailo Matseliukh.",
+        "9": "Vyhoda (photo taken in <b>1920</b>). Photo courtesy of B. Pokropinskyi.",
+        "10": "Vyhoda. Railway bridge across the River Svicha (postcard issued by Zaklad Graficzny Hegedüs, Lviv, <b>1928</b>). Postcard courtesy of Mykola Rudevych.",
+        "11": "Dolyna Povit, narrow gauge railway (postcard issued in <b>1930</b>). Collection: Library Polona. ",
+        "12": "Wood transportation by narrow gauge railway of the Sylvinia Company (postcard issued in <b>1930</b>). Collection: Library Polona",
+        "13": "Vyhoda. Loggers in the background of the steam train (photo taken in <b>1930</b>). Photo courtesy of Mykola Rudevych.",
+        "14": "<b>К-4-558</b> in Vyhoda. Photo taken in <b>1956</b>. Photo courtesy of I. Ziatiuk.",
+        "15": "Photo taken in <b>1956</b>. Photo courtesy of I. Ziatiuk.",
+        "16": "Wood transportation. Video made in <b>2012</b>."
       },
       "touristRoute": {
-        "1": "In 1924-1939 the Silvinia Land und Forstwirtschaft, Wygoda Company, which bought Baron Popper’s woodworking business, continued to be engaged in the building of the narrow gauge railway to transport wood.<br/> This narrow gauge railway station was also used for transporting passengers. In 1938-1939<br/> there was a regular passenger train from Vyhoda to the River Svicha and back. It left from Vyhoda<br/> at 8: 45 a.m. and arrived at the final station Svicha at 10: 30 a.m. The speed was 25 kilometers perhour.<br/> The train left at 4: 30 p.m. arriving at Vyhoda at 6: 00 p.m. This route was also used by tourists.",
-        "2": "Video of the trip made in 1933. Resource: the Polish film archive.",
-        "3": "Vyhoda. Tourist trip by the narrow gauge railway of the Silvinia Company (photo taken in 1937).<br/> Collection: The Library Polona.",
-        "4": "Liudvykivka. Tourist group of Tadeusz Orlovych next to the rail trolley (photo taken by Tadeusz <br/> Dohnalik, August, 1938)",
-        "5": "In 2000 the Uniplyt Woodworking Plant renewed the Mizun branch of the narrow gauge railway <br/> which is functioning to this day. This branch is used as a mapped tourist route which is used for the <br/> much-loved Carpathian Tram.",
+        "1": "In <b>1924-1939</b> the Silvinia Land und Forstwirtschaft, Wygoda Company, which bought Baron Popper’s woodworking business, continued to be engaged in the building of the narrow gauge railway to transport wood.<br/> This narrow gauge railway station was also used for transporting passengers. In <b>1938-1939</b><br/> there was a regular passenger train from Vyhoda to the River Svicha and back. It left from Vyhoda<br/> at <b>8: 45</b> a.m. and arrived at the final station Svicha at <b>10: 30</b> a.m. The speed was <b>25</b> kilometers per hour.<br/> The train left at <b>4: 30</b> p.m. arriving at Vyhoda at <b>6: 00</b> p.m. This route was also used by tourists.",
+        "2": "Video of the trip made in <b>1933</b>. Resource: the Polish film archive.",
+        "3": "Vyhoda. Tourist trip by the narrow gauge railway of the Silvinia Company (photo taken in <b>1937</b>).<br/> Collection: The Library Polona.",
+        "4": "Liudvykivka. Tourist group of Tadeusz Orlovych next to the rail trolley (photo taken by Tadeusz <br/> Dohnalik, August, <b>1938</b>)",
+        "5": "In <b>2000</b> the Uniplyt Woodworking Plant renewed the Mizun branch of the narrow gauge railway <br/> which is functioning to this day. This branch is used as a mapped tourist route which is used for the <br/> much-loved Carpathian Tram.",
         "6": "Photo from the Internet",
         "7": "Photo from the Internet",
         "8": "Video - Carpathian Tram"
       },
       "theBaronsResidence": {
-        "1": "One of the oldest buildings in the town of Vyhoda was constructed in 1873 as a residence for the Austrian Baron Leopold Popper von Podhrágy. There was a time when this house received a lot of fun guests or served as the headquarters for the military.<br/> During the Soviet era, the house was transformed into a village club and during the last decades, it was used only on occasion until 2013 when it completely fell into a decline.<br/> The building was brought back to life in 2015 after opening a new tourist attraction Vyhoda Narrow Gauge Heritage Center, which was funded by the EU as part of the Carpathian Narrow<br/> Railway Gauge Trans-border Project",
-        "2": "Baron Popper’s villa (postcard issued in 1901). Postcard courtesy of Iryna and Ihor Kotlobulatovy",
-        "3": "Baron Popper’s villa (postcard issued in 1904). Postcard courtesy of Yurii Freiv",
-        "4": "German paramedic officers in front of Popper’s house <br/>(photo taken in 1915). Resource: Dolyna Povit in Old Photos by Yurii Freiv.",
-        "5": "German paramedic officer in front of Popper’s house <br/>(photo taken in 1915). Resource: Dolyna Povit in Old Photos by Yurii Freiv.",
-        "6": "German paramedic officers in front of Popper’s house <br/>(the photo was taken in 1915). Resource: Dolyna Povit in Old Photos by Yurii Freiv.",
-        "7": "As of the end of the year 2013.",
-        "8": "As of the year 2015.",
+        "1": "One of the oldest buildings in the town of Vyhoda was constructed in <b>1873</b> as a residence for the Austrian Baron Leopold Popper von Podhrágy. There was a time when this house received a lot of fun guests or served as the headquarters for the military.<br/> During the Soviet era, the house was transformed into a village club and during the last decades, it was used only on occasion until <b>2013</b> when it completely fell into a decline.<br/> The building was brought back to life in <b>2015</b> after opening a new tourist attraction Vyhoda Narrow Gauge Heritage Center, which was funded by the EU as part of the Carpathian Narrow<br/> Railway Gauge Trans-border Project",
+        "2": "Baron Popper’s villa (postcard issued in <b>1901</b>). Postcard courtesy of Iryna and Ihor Kotlobulatovy",
+        "3": "Baron Popper’s villa (postcard issued in <b>1904</b>). Postcard courtesy of Yurii Freiv",
+        "4": "German paramedic officers in front of Popper’s house <br/>(photo taken in <b>1915</b>). Resource: Dolyna Povit in Old Photos by Yurii Freiv.",
+        "5": "German paramedic officer in front of Popper’s house <br/>(photo taken in <b>1915</b>). Resource: Dolyna Povit in Old Photos by Yurii Freiv.",
+        "6": "German paramedic officers in front of Popper’s house <br/>(the photo was taken in <b>1915</b>). Resource: Dolyna Povit in Old Photos by Yurii Freiv.",
+        "7": "As of the end of the year <b>2013</b>.",
+        "8": "As of the year <b>2015</b>.",
         "9": "Past (beginning of the 20th century).",
-        "10": "Present (beginning of the 21st century)."
+        "10": "Present (beginning of the <b>21</b>st century)."
       }
     }
   }

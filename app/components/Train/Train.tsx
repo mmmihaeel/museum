@@ -16,13 +16,15 @@ type props = {
   lang: Locale;
 };
 
-const Train: React.FC<props> = ({ localizations, lang }: props) => {
 
+const Train: React.FC<props> = ({ localizations }: props) => {
+  console.log(localizations.train.links);
+  const TrainData = localizations.train;
   const pages: Array<IPage> = [
-    { title: localizations.train.navigation.popperDynasty, link: `${lang}/book/popper-dynasty` },
-    { title: localizations.train.navigation.theOldestNarrowGaugeRailway, link: `${lang}/book/the-oldest-narrow-gauge-railway` },
-    { title: localizations.train.navigation.touristRoute, link: `${lang}/book/tourist-route` },
-    { title: localizations.train.navigation.theBaronsResidence, link: `${lang}/book/the-barons-residence` },
+    { title: TrainData.navigation.popperDynasty, link: TrainData.links.popperDynasty },
+    { title: TrainData.navigation.theOldestNarrowGaugeRailway, link: TrainData.links.theOldestNarrowGaugeRailway },
+    { title: TrainData.navigation.touristRoute, link: TrainData.links.touristRoute },
+    { title: TrainData.navigation.theBaronsResidence, link: TrainData.links.theBaronsResidence },
   ];
 
   // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -95,7 +97,7 @@ const Train: React.FC<props> = ({ localizations, lang }: props) => {
           <div key={index} className={gameStyles.train_car} ref={carriage}>
             <TrainCar />
             <div className={gameStyles.train_car_box}>
-              <Link className={gameStyles.train_car_link} href={page.link} style={page.link === `${lang}/book/the-oldest-narrow-gauge-railway` ? { fontSize: "calc(1.75vh)" } : {}}>
+              <Link className={gameStyles.train_car_link} href={page.link} style={page.link === TrainData.links.popperDynasty ? { fontSize: "calc(1.75vh)" } : {}}>
                 {page.title}
               </Link>
             </div>

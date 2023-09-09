@@ -59,8 +59,9 @@
 .finger {
     position: absolute;
     width: 40px;
-    bottom: 3%;
+    bottom: 5%;
     right: 5.4%;
+    z-index: 30;
 }
 
 .close svg,
@@ -79,9 +80,14 @@
     align-items: center;
 
 }
+<<<<<<< HEAD
 
 .description {
     font-size: 16px;
+=======
+.description{
+    font-size: 15px;
+>>>>>>> 602b2bf233d9cbee3f9b7dc9ddf5198a6cb510c6
     color: #262626;
     font-family: 'Bad Script';
     font-style: italic;
@@ -90,8 +96,16 @@
     line-height: normal;
     text-align: center;
 }
+<<<<<<< HEAD
 
 .popper_gerb {
+=======
+.description b {
+    font-family: 'B612 Mono';
+    font-weight: normal;
+}
+.popper_gerb{
+>>>>>>> 602b2bf233d9cbee3f9b7dc9ddf5198a6cb510c6
     width: 75% !important;
 }
 
@@ -112,7 +126,7 @@
     }
 
     .finger {
-        width: 72px;
+        width: 92px;
     }
 
     .description {

@@ -9,6 +9,12 @@ export type DictionaryData = {
           theOldestNarrowGaugeRailway: string;
           touristRoute: string;
           theBaronsResidence: string;
+        },
+        links: {
+          popperDynasty: string;
+          theOldestNarrowGaugeRailway: string;
+          touristRoute: string;
+          theBaronsResidence: string;
         };
       };
       book: {
