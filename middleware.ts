@@ -7,7 +7,7 @@ import { match as matchLocale } from '@formatjs/intl-localematcher';
 import Negotiator from 'negotiator';
 
 function isStaticAssets(path: string) {
-  const imageExtensions = ['.png', '.gif', '.svg', '.jpg', '.mov', '.jpeg', '.webm', '.json', '.js', '.css'];
+  const imageExtensions = ['.png', '.gif', '.svg', '.jpg', '.mov', '.jpeg', '.webm', '.json', '.js', '.css', '.mp4'];
   const lowerPath = path.toLowerCase();
   for (const ext of imageExtensions) {
     if (lowerPath.endsWith(ext)) {
