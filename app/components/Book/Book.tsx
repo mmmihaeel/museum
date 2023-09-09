@@ -7,17 +7,18 @@ import { DictionaryData } from '@/lib/dictionary';
 import "../../../lib/turn";
 
 type props = {
+    className: string;
     localizations: DictionaryData;
     children: React.ReactNode;
 };
 
 const Book: React.FC<props> = (props) => {
-    const { children } = props;
+    const { children, className } = props;
     const elRef = useRef<HTMLDivElement | null>(null);
 
     const options = {
-        width: (window.innerHeight * 0.8677) * 1.556,
-        height: window.innerHeight * 0.8677,
+        // width: (window.innerHeight * 0.8677) * 1.556,
+        // height: window.innerHeight * 0.8677,
         autoCenter: true,
         display: "double",
         acceleration: true,
@@ -65,7 +66,7 @@ const Book: React.FC<props> = (props) => {
     };
 
     return (
-        <div ref={elRef} className="magazine">
+        <div ref={elRef} className={`magazine ${className}`}>
             {children}
         </div>
     );

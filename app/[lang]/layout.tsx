@@ -9,10 +9,10 @@ const montserratAlternates = Montserrat_Alternates({
   weight: ['100', '200', '300', '500'],
 });
 
-export const metadata: Metadata = {
-  title: 'Home Page',
-  description: 'This is a main page!',
-};
+// export const metadata: Metadata = {
+//   title: 'Home Page',
+//   description: 'This is a main page!',
+// };
 
 export async function generateStaticParams() {
   return i18n.locales.map(locale => ({ lang: locale }));
