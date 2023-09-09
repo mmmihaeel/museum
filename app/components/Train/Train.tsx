@@ -9,13 +9,12 @@ import Hand from '../Hand/Hand';
 import { IPage } from '../../interfaces/page.interface';
 import { DictionaryData } from '@/lib/dictionary';
 import HomeBg from '../../assets/images/game/home-background.svg';
-import { Locale } from '@/build/i18n.config';
+import { Locale } from '@/i18n.config';
 
 type props = {
   localizations: DictionaryData;
   lang: Locale;
 };
-
 
 const Train: React.FC<props> = ({ localizations }: props) => {
   const TrainData = localizations.train;
