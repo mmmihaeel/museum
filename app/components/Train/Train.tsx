@@ -9,17 +9,20 @@ import Hand from '../Hand/Hand';
 import { IPage } from '../../interfaces/page.interface';
 import { DictionaryData } from '@/lib/dictionary';
 import HomeBg from '../../assets/images/game/home-background.svg';
+import { Locale } from '@/build/i18n.config';
 
 type props = {
   localizations: DictionaryData;
+  lang: Locale;
 };
 
-const Train: React.FC<props> = ({ localizations }: props) => {
+const Train: React.FC<props> = ({ localizations, lang }: props) => {
+
   const pages: Array<IPage> = [
-    { title: "Династя Поппера", link: "book/popper-dynasty" },
-    { title: "Найсаріша Вузькоколійка", link: "book/the-oldest-narrow-gauge-railway" },
-    { title: "Туристичний маршрут", link: "book/tourist-route" },
-    { title: "Резиденція барона", link: "book/the-barons-residence" },
+    { title: localizations.train.navigation.popperDynasty, link: `${lang}/book/popper-dynasty` },
+    { title: localizations.train.navigation.theOldestNarrowGaugeRailway, link: `${lang}/book/the-oldest-narrow-gauge-railway` },
+    { title: localizations.train.navigation.touristRoute, link: `${lang}/book/tourist-route` },
+    { title: localizations.train.navigation.theBaronsResidence, link: `${lang}/book/the-barons-residence` },
   ];
 
   // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -58,7 +61,7 @@ const Train: React.FC<props> = ({ localizations }: props) => {
 
   const handleDragEnd = useCallback(() => setDragState(prevState => ({ ...prevState, isDragging: false })), []);
   const handleClick = useCallback(() => {
-    setDragState(prevState => ({ ...prevState, trainPosition: prevState.trainPosition - (carriage.current ? carriage.current.offsetWidth : 1068) }))
+    setDragState(prevState => ({ ...prevState, trainPosition: prevState.trainPosition - (carriage.current ? carriage.current.offsetWidth : 1068) }));
     train.current && (train.current.style.transition = 'all .4s', setTimeout(() => train.current && (train.current.style.transition = 'none'), 400));
   }, []);
 
@@ -92,7 +95,7 @@ const Train: React.FC<props> = ({ localizations }: props) => {
           <div key={index} className={gameStyles.train_car} ref={carriage}>
             <TrainCar />
             <div className={gameStyles.train_car_box}>
-              <Link className={gameStyles.train_car_link} href={page.link}>
+              <Link className={gameStyles.train_car_link} href={page.link} style={page.link === `${lang}/book/the-oldest-narrow-gauge-railway` ? { fontSize: "calc(1.75vh)" } : {}}>
                 {page.title}
               </Link>
             </div>

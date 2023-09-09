@@ -34,7 +34,6 @@ export default function BookLayout({
         </main>
       </body >
       <script async src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-      <script async src="https://unpkg.com/turn.js@latest"></script>
     </html >
   </>
   );

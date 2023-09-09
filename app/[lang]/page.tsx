@@ -10,7 +10,7 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
   return (
     <>
       <Header />
-      <Train localizations={localizations} />
+      <Train localizations={localizations} lang={lang} />
     </>
   );
 }

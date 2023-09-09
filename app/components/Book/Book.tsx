@@ -26,7 +26,7 @@ const Book: React.FC<props> = (props) => {
         //@ts-ignore
         gradients: !$.isTouch,
         when: {
-            turned: function (e: any, page: any) {
+            turned: function () {
                 //@ts-ignore
                 console.log("Current view: ", $(this).turn("view"));
             },
@@ -38,7 +38,7 @@ const Book: React.FC<props> = (props) => {
             if (elRef.current) {
                 //@ts-ignore
                 $(elRef.current).turn({ ...options });
-                
+
                 //@ts-ignore
                 $(elRef.current!).turn("next");
 
@@ -51,7 +51,7 @@ const Book: React.FC<props> = (props) => {
                 };
             }
         });
-    }, []);
+    });
 
 
     const handleKeyDown = (event: KeyboardEvent) => {

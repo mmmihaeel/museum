@@ -23,14 +23,19 @@
   left: 60vw;
   // transition: all .2s linear;
 }
-.smoke{
+
+.smoke {
   position: absolute;
   background-blend-mode: screen;
 }
+
 .no_user_drag {
-  -webkit-user-drag: none; /* Для Safari */
-  user-drag: none; /* Заборонити перетягування */
+  -webkit-user-drag: none;
+  /* Для Safari */
+  user-drag: none;
+  /* Заборонити перетягування */
 }
+
 .train_head,
 .train_car {
   position: relative;
@@ -78,8 +83,12 @@
   user-select: none;
   font-size: 2vh;
 
-  &:hover {
+  &:hover,
+  &:focus,
+  &:active {
     text-decoration: none;
+    color: #9D072B;
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.25);
   }
 }
 
@@ -90,6 +99,7 @@
   right: 0;
   z-index: 20;
 }
+
 .hand svg {
   height: 100%;
 }
