@@ -102,6 +102,7 @@ const Train: React.FC<props> = ({ localizations }: props) => {
       </div>
       <Hand className={gameStyles.hand} onClick={handleClick} />
       <Image className={gameStyles.home_bg} src={HomeBg} alt={'home page background'} />
+      <div className={gameStyles.page_title}>{TrainData.museumMainTitle}</div>
     </div>
   );
 };

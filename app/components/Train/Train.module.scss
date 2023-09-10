@@ -148,3 +148,44 @@
 .wheel_4 {
   left: 14.96%;
 }
+.page_title {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 38%;
+  height: 6.2%;
+  aspect-ratio: 13 / 1;
+  color: #B0ADAC;
+  text-align: center;
+  text-shadow: 4px 4px 30px rgba(0, 0, 0, 0.15);
+  font-family: 'Montserrat Alternates';
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+@media screen and (min-height: 900px) {
+  .page_title {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-height: 1000px) {
+  .page_title {
+    font-size: 35px;
+  }
+}
+
+@media screen and (min-height: 1300px) {
+  .page_title {
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-height: 1440px) {
+  .page_title {
+    font-size: 45px;
+  }
+}
