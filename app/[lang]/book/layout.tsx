@@ -2,15 +2,9 @@ import Image from 'next/image';
 import bookBg from '../../assets/images/book/layer-book.svg';
 import bookStyles from './book.module.scss';
 import { Locale } from '@/i18n.config';
-import { Bad_Script } from 'next/font/google';
 
 import Close from '@/app/components/Close';
 import FingerSVG from "../../assets/images/book/finger.svg";
-
-// const badScript = Bad_Script({
-//   subsets: ['cyrillic'],
-//   weight: ['400'],
-// });
 
 export default function BookLayout({
   children,

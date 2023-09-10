@@ -1,44 +1,11 @@
 "use server";
 import type { Locale } from '@/i18n.config';
-
-export type DictionaryData = {
-    train: {
-        museumMainTitle: string;
-        navigation: {
-          popperDynasty: string;
-          theOldestNarrowGaugeRailway: string;
-          touristRoute: string;
-          theBaronsResidence: string;
-        },
-        links: {
-          popperDynasty: string;
-          theOldestNarrowGaugeRailway: string;
-          touristRoute: string;
-          theBaronsResidence: string;
-        };
-      };
-      book: {
-        pages: {
-          popperDynasty: {
-            [key: string]: string;
-          };
-          theOldestNarrowGaugeRailway: {
-            [key: string]: string;
-          };
-          touristRoute: {
-            [key: string]: string;
-          };
-          theBaronsResidence: {
-            [key: string]: string;
-          };
-        };
-      };
-};
+import { IDictionaryData } from '@/app/interfaces/dictionary-data.interface';
 
 const dictionaries = {
-  en: () => import('@/dictionaries/en.json').then((module) => module.default) as Promise<DictionaryData>,
-  ua: () => import('@/dictionaries/ua.json').then((module) => module.default) as Promise<DictionaryData>
+  en: () => import('@/dictionaries/en.json').then((module) => module.default) as Promise<IDictionaryData>,
+  ua: () => import('@/dictionaries/ua.json').then((module) => module.default) as Promise<IDictionaryData>
 };
 
-export const getDictionary: (locale: Locale) => Promise<DictionaryData> = async (locale: Locale) => dictionaries[locale]();
+export const getDictionary: (locale: Locale) => Promise<IDictionaryData> = async (locale: Locale) => dictionaries[locale]();
 

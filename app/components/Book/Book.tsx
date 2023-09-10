@@ -3,12 +3,12 @@
 "use client";
 import React, { useEffect, useRef } from 'react';
 import $ from 'jquery';
-import { DictionaryData } from '@/lib/dictionary';
+import { IDictionaryData } from '@/app/interfaces/dictionary-data.interface';
 import "../../../lib/turn";
 
 type props = {
     className: string;
-    localizations: DictionaryData;
+    localizations: IDictionaryData;
     children: React.ReactNode;
 };
 

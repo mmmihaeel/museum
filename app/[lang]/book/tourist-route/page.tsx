@@ -1,6 +1,7 @@
 "use server";
 import { Locale } from '@/i18n.config';
-import { DictionaryData, getDictionary } from '@/lib/dictionary';
+import { getDictionary } from '@/lib/dictionary';
+import { IDictionaryData } from '@/app/interfaces/dictionary-data.interface';
 import dynamic from 'next/dynamic';
 const Book = dynamic(() => import('../../../components/Book/Book'), { ssr: false });
 import Image from 'next/image';
@@ -14,9 +15,9 @@ import TouristRedTrainImg from "../../../assets/images/book/tourist-internet-red
 
 export default async function Page({ params }: { params: { lang: Locale }, }) {
 
-  const localizations: DictionaryData = await getDictionary(params.lang);
+  const localizations: IDictionaryData = await getDictionary(params.lang);
 
-  const data = (localizations as DictionaryData).book.pages['touristRoute'];
+  const data = (localizations as IDictionaryData).book.pages['touristRoute'];
 
   return (
     <Book className={bookStyles.book} localizations={localizations}>
@@ -86,7 +87,7 @@ export default async function Page({ params }: { params: { lang: Locale }, }) {
       <div className={`page ${bookStyles.page}`}>
         <RightPage className={bookStyles.page_bg} />
         <div className={bookStyles.content}>
-          <video controls className={bookStyles.video_vertical}  poster="/videos/tourist-route-poster.png">
+          <video controls className={bookStyles.video_vertical}>
             <source src="/videos/touristRoute-2.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>

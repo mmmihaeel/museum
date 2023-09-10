@@ -1,6 +1,7 @@
 "use server";
 import { Locale } from '@/i18n.config';
-import { DictionaryData, getDictionary } from '@/lib/dictionary';
+import { getDictionary } from '@/lib/dictionary';
+import { IDictionaryData } from '@/app/interfaces/dictionary-data.interface';
 import dynamic from 'next/dynamic';
 const Book = dynamic(() => import('../../../components/Book/Book'), { ssr: false });
 import Image from 'next/image';
@@ -15,7 +16,7 @@ import PopperBaronImg from "../../../assets/images/book/popper-baron.png";
 
 export default async function Page({ params }: { params: { lang: Locale }, }) {
 
-  const localizations: DictionaryData = await getDictionary(params.lang);
+  const localizations: IDictionaryData = await getDictionary(params.lang);
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const data = (localizations as any).book.pages['popperDynasty'];

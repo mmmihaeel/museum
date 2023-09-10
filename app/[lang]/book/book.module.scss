@@ -114,11 +114,11 @@
 		 height: 100% !important;
 	}
     .description {
-        font-size: 26px;
+        font-size: 28px;
     }
 }
- @media screen and (min-height: 1600px) {
-	 .description .popper_gerb .description {
+ @media screen and (min-height: 1450px) {
+	 .description {
 		 font-size: 38px;
 	}
 }

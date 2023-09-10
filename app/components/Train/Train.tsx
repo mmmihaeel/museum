@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useState, useRef, useCallback } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -7,12 +6,11 @@ import gameStyles from './Train.module.scss';
 import { TrainHead, TrainCar, Wheel } from './TrainComponents';
 import Hand from '../Hand/Hand';
 import { IPage } from '../../interfaces/page.interface';
-import { DictionaryData } from '@/lib/dictionary';
+import { IDictionaryData } from '@/app/interfaces/dictionary-data.interface';
 import HomeBg from '../../assets/images/game/home-background.svg';
 import { Locale } from '@/i18n.config';
-
 type props = {
-  localizations: DictionaryData;
+  localizations: IDictionaryData;
   lang: Locale;
 };
 
