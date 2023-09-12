@@ -20,6 +20,7 @@
 	 display: flex;
 	 flex-direction: column;
 	 justify-content: center;
+	 position: relative;
 }
  .book_bg {
 	 height: 100%;
@@ -49,10 +50,17 @@
 }
  .finger {
 	 position: absolute;
-	 width: 40px;
-	 bottom: 5%;
-	 right: 5.4%;
+	//  width: 40px;
+	 height: 50px;
+	 width: 50px;
+	 bottom: 6%;
+	 right: 8%;
 	 z-index: 30;
+}
+
+.finger_left {
+	transform: scaleX(-1);
+	left: 4%;
 }
  .close svg, .finger svg {
 	 width: 100%;
@@ -73,17 +81,9 @@
      font-family: 'Bad Script';
      margin-top: 10px;
 }
- .description .description {
-	 font-size: 15px;
-	 color: #262626;
-	 font-style: italic;
-	 font-style: normal;
-	 font-weight: 400;
-	 line-height: normal;
-}
- .description .popper_gerb .description b {
-	 font-family: 'B612 Mono';
-	 font-weight: normal;
+ .description b {
+	font-family: 'B612 Mono';
+	font-weight: normal;
 }
 .popper_gerb {
 	 width: 75% !important;
@@ -120,5 +120,16 @@
  @media screen and (min-height: 1450px) {
 	 .description {
 		 font-size: 38px;
+	}
+	.close {
+		width: 40px;
+	}
+	.finger {
+		height: 100px;
+		width: 100px;
+	}
+	.finger_left {
+		width: 100px;
+		height: 100px;
 	}
 }

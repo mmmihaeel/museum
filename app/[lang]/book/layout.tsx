@@ -4,7 +4,6 @@ import bookStyles from './book.module.scss';
 import { Locale } from '@/i18n.config';
 
 import Close from '@/app/components/Close';
-import FingerSVG from "../../assets/images/book/finger.svg";
 
 export default function BookLayout({
   children,
@@ -22,7 +21,6 @@ export default function BookLayout({
             <div className={bookStyles.book_page}>
               {children}
               <Close className={bookStyles.close} href={`/${params.lang}`} />
-              <Image src={FingerSVG} alt={"swipe"} className={bookStyles.finger} />
             </div>
           </div>
         </main>
