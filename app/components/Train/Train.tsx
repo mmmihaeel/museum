@@ -48,13 +48,16 @@ const Train: React.FC<props> = ({ localizations }: props) => {
     const clientX = 'touches' in event ? event.touches[0].clientX : event.clientX;
     const newTrainPosition = clientX - dragState.initialX;
     const rotation: number = (newTrainPosition / 360) * 408;
-
-    requestAnimationFrame(() => {
-      wheelRefs.forEach(wheelRef => {
-        if (wheelRef.current) wheelRef.current.style.transform = `rotate(${rotation}deg)`;
+    const trainWidth = train.current?.offsetWidth || 2500;
+    const carriageWidth = carriage.current?.offsetWidth || 1068;
+    if (newTrainPosition >= -trainWidth + carriageWidth) {
+      requestAnimationFrame(() => {
+        wheelRefs.forEach(wheelRef => {
+          if (wheelRef.current) wheelRef.current.style.transform = `rotate(${rotation}deg)`;
+        });
+        setDragState(prevState => ({ ...prevState, trainPosition: newTrainPosition }));
       });
-      setDragState(prevState => ({ ...prevState, trainPosition: newTrainPosition }));
-    });
+    }
   }, [dragState.initialX, dragState.isDragging, wheelRefs]);
 
   
