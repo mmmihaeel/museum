@@ -12,6 +12,7 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
     <>
       <Header />
       <Train localizations={localizations} lang={lang} />
+      <title>{localizations.train.museumMainTitle}</title>
     </>
   );
 }

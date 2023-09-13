@@ -42,27 +42,38 @@
 	 top: 0;
 }
  .close {
+	cursor: pointer;
 	 position: absolute;
 	 width: 20px;
-	 top: 4%;
-	 right: 6%;
+	 top: 20px;
+	 right: 40px;
 	 z-index: 30;
-}
- .finger {
-	 position: absolute;
-	//  width: 40px;
-	 height: 50px;
-	 width: 50px;
-	 bottom: 6%;
-	 right: 8%;
-	 z-index: 30;
+	 &:hover{
+		transform: scale(1.05);
+		transition: all .2s;
+	 }
 }
 
-.finger_left {
-	transform: scaleX(-1);
-	left: 4%;
+.finger_wrapper {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	right: 8%;
+	top: 2%;
+	width: 40px;
+	height: 92%;
 }
- .close svg, .finger svg {
+.finger_wrapper > div {
+	height: 50px;
+}
+.finger_wrapper_left {
+	left: 8%;
+}
+.finger_wrapper_left > div {
+	transform: scaleX(-1);
+}
+ .close svg{
 	 width: 100%;
 	 height: auto;
 }
@@ -116,6 +127,12 @@
     .description {
         font-size: 28px;
     }
+	.finger_wrapper {
+		width: 80px;
+	}
+	.finger_wrapper > div {
+		height: 100px;
+	}
 }
  @media screen and (min-height: 1450px) {
 	 .description {
@@ -123,13 +140,5 @@
 	}
 	.close {
 		width: 40px;
-	}
-	.finger {
-		height: 100px;
-		width: 100px;
-	}
-	.finger_left {
-		width: 100px;
-		height: 100px;
 	}
 }

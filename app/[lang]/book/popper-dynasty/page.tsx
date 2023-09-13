@@ -43,8 +43,13 @@ export default async function Page({ params }: { params: { lang: Locale }, }) {
         <div className={bookStyles.content}>
           <p className={bookStyles.description} dangerouslySetInnerHTML={{ __html:  data['2']}}></p>
         </div>
-        <div className={bookStyles.finger}>
-          <Image src={FingerSVG} alt={"swipe"} />
+        <div className={bookStyles.finger_wrapper}>
+          <div>
+            <Image src={FingerSVG} alt={"swipe"} />
+          </div>
+          <div>
+            <Image src={FingerSVG} alt={"swipe"} />
+          </div>
         </div>
       </div>
 
@@ -54,8 +59,13 @@ export default async function Page({ params }: { params: { lang: Locale }, }) {
           <Image src={PopperImg} alt={'Popper'} />
           <p className={bookStyles.description} dangerouslySetInnerHTML={{ __html:  data['3']}}></p>
         </div>
-        <div className={`${bookStyles.finger} ${bookStyles.finger_left}`}>
-          <Image src={FingerSVG} alt={"swipe"} />
+        <div className={`${bookStyles.finger_wrapper} ${bookStyles.finger_wrapper_left}`}>
+          <div>
+            <Image src={FingerSVG} alt={"swipe"} />
+          </div>
+          <div>
+            <Image src={FingerSVG} alt={"swipe"} />
+          </div>
         </div>
       </div>
 
@@ -65,8 +75,13 @@ export default async function Page({ params }: { params: { lang: Locale }, }) {
           <Image src={PopperGerbImg} alt={'Popper Gerb'} className={bookStyles.popper_gerb} />
           <p className={bookStyles.description} dangerouslySetInnerHTML={{ __html:  data['4']}}></p>
         </div>
-        <div className={bookStyles.finger}>
-          <Image src={FingerSVG} alt={"swipe"} />
+        <div className={bookStyles.finger_wrapper}>
+          <div>
+            <Image src={FingerSVG} alt={"swipe"} />
+          </div>
+          <div>
+            <Image src={FingerSVG} alt={"swipe"} />
+          </div>
         </div>
       </div>
 
@@ -76,8 +91,13 @@ export default async function Page({ params }: { params: { lang: Locale }, }) {
           <Image src={PopperHouseImg} alt={'Popper House'} />
           <p className={bookStyles.description} dangerouslySetInnerHTML={{ __html:  data['5']}}></p>
         </div>
-        <div className={`${bookStyles.finger} ${bookStyles.finger_left}`}>
-          <Image src={FingerSVG} alt={"swipe"} />
+        <div className={`${bookStyles.finger_wrapper} ${bookStyles.finger_wrapper_left}`}>
+          <div>
+            <Image src={FingerSVG} alt={"swipe"} />
+          </div>
+          <div>
+            <Image src={FingerSVG} alt={"swipe"} />
+          </div>
         </div>
       </div>
 
@@ -87,8 +107,13 @@ export default async function Page({ params }: { params: { lang: Locale }, }) {
           <Image src={PopperGraveImg} alt={'Popper grave'} />
           <p className={bookStyles.description} dangerouslySetInnerHTML={{ __html:  data['6']}}></p>
         </div>
-        <div className={bookStyles.finger}>
-          <Image src={FingerSVG} alt={"swipe"} />
+        <div className={bookStyles.finger_wrapper}>
+          <div>
+            <Image src={FingerSVG} alt={"swipe"} />
+          </div>
+          <div>
+            <Image src={FingerSVG} alt={"swipe"} />
+          </div>
         </div>
       </div>
       
@@ -97,8 +122,13 @@ export default async function Page({ params }: { params: { lang: Locale }, }) {
         <div className={bookStyles.content}>
           <p className={bookStyles.description} dangerouslySetInnerHTML={{ __html:  data['7']}}></p>
         </div>
-        <div className={`${bookStyles.finger} ${bookStyles.finger_left}`}>
-          <Image src={FingerSVG} alt={"swipe"} />
+        <div className={`${bookStyles.finger_wrapper} ${bookStyles.finger_wrapper_left}`}>
+          <div>
+            <Image src={FingerSVG} alt={"swipe"} />
+          </div>
+          <div>
+            <Image src={FingerSVG} alt={"swipe"} />
+          </div>
         </div>
       </div>
 
@@ -108,6 +138,18 @@ export default async function Page({ params }: { params: { lang: Locale }, }) {
           <Image src={PopperBaronImg} alt={'Popper Baron'} className={bookStyles.popper_baron} />
           <p className={bookStyles.description} dangerouslySetInnerHTML={{ __html:  data['8']}}></p>
         </div>
+        <div className={bookStyles.finger_wrapper}>
+          <div>
+            <Image src={FingerSVG} alt={"swipe"} />
+          </div>
+          <div>
+            <Image src={FingerSVG} alt={"swipe"} />
+          </div>
+        </div>
+      </div>
+
+      <div className={`page ${bookStyles.page}`}>
+        <LeftPage className={bookStyles.page_bg} />
       </div>
 
   </Book>

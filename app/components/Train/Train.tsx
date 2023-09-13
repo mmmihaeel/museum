@@ -57,11 +57,16 @@ const Train: React.FC<props> = ({ localizations }: props) => {
     });
   }, [dragState.initialX, dragState.isDragging, wheelRefs]);
 
+  
+
   const handleDragEnd = useCallback(() => setDragState(prevState => ({ ...prevState, isDragging: false })), []);
   const handleClick = useCallback(() => {
-    setDragState(prevState => ({ ...prevState, trainPosition: prevState.trainPosition - (carriage.current ? carriage.current.offsetWidth : 1068) }));
-    // train.current && (train.current.style.transition = 'all .4s', setTimeout(() => train.current && (train.current.style.transition = 'none'), 400));
-  }, []);
+    const carriageWidth = carriage.current?.offsetWidth || 1068;
+    const trainWidth = train.current?.offsetWidth || 2500;
+    const newTrainPosition = dragState.trainPosition - carriageWidth;
+      
+    setDragState(prevState => ({...prevState, trainPosition: newTrainPosition < -trainWidth + carriageWidth ? 0 : newTrainPosition}));
+  }, [dragState.trainPosition]);
 
   return (
     <div className={gameStyles.container}>

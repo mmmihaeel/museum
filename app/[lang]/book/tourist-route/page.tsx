@@ -8,6 +8,8 @@ import Image from 'next/image';
 import bookStyles from '../book.module.scss';
 import { LeftPage, RightPage } from '@/app/components/Book/BookPages';
 
+import FingerSVG from "../../../assets/images/book/finger.svg";
+
 import TouristWalkImg from "../../../assets/images/book/tourist-walk.png";
 import TouristGroupImg from "../../../assets/images/book/tourist-group.png";
 import TouristGreenTrainImg from "../../../assets/images/book/tourist-internet-green-train.png";
@@ -43,6 +45,14 @@ export default async function Page({ params }: { params: { lang: Locale }, }) {
           </video>
           <p className={bookStyles.description} dangerouslySetInnerHTML={{ __html: data['2'] }}></p>
         </div>
+        <div className={bookStyles.finger_wrapper}>
+          <div>
+            <Image src={FingerSVG} alt={"swipe"} />
+          </div>
+          <div>
+            <Image src={FingerSVG} alt={"swipe"} />
+          </div>
+        </div>
       </div>
 
       <div className={`page ${bookStyles.page}`}>
@@ -50,6 +60,14 @@ export default async function Page({ params }: { params: { lang: Locale }, }) {
         <div className={bookStyles.content}>
           <Image src={TouristWalkImg} alt={'Tourist track walk'} className={bookStyles.tourist_walk} />
           <p className={bookStyles.description} dangerouslySetInnerHTML={{ __html: data['3'] }}></p>
+        </div>
+        <div className={`${bookStyles.finger_wrapper} ${bookStyles.finger_wrapper_left}`}>
+          <div>
+            <Image src={FingerSVG} alt={"swipe"} />
+          </div>
+          <div>
+            <Image src={FingerSVG} alt={"swipe"} />
+          </div>
         </div>
       </div>
 
@@ -59,12 +77,28 @@ export default async function Page({ params }: { params: { lang: Locale }, }) {
           <Image src={TouristGroupImg} alt={'Tourist track group'} className={bookStyles.popper_baron} />
           <p className={bookStyles.description} dangerouslySetInnerHTML={{ __html: data['4'] }}></p>
         </div>
+        <div className={bookStyles.finger_wrapper}>
+          <div>
+            <Image src={FingerSVG} alt={"swipe"} />
+          </div>
+          <div>
+            <Image src={FingerSVG} alt={"swipe"} />
+          </div>
+        </div>
       </div>
 
       <div className={`page ${bookStyles.page}`}>
         <LeftPage className={bookStyles.page_bg} />
         <div className={bookStyles.content}>
           <p className={bookStyles.description} dangerouslySetInnerHTML={{ __html: data['5'] }}></p>
+        </div>
+        <div className={`${bookStyles.finger_wrapper} ${bookStyles.finger_wrapper_left}`}>
+          <div>
+            <Image src={FingerSVG} alt={"swipe"} />
+          </div>
+          <div>
+            <Image src={FingerSVG} alt={"swipe"} />
+          </div>
         </div>
       </div>
 
@@ -74,6 +108,14 @@ export default async function Page({ params }: { params: { lang: Locale }, }) {
           <Image src={TouristGreenTrainImg} alt={'Tourist track green train'} className={bookStyles.popper_baron} />
           <p className={bookStyles.description} dangerouslySetInnerHTML={{ __html: data['6'] }}></p>
         </div>
+        <div className={bookStyles.finger_wrapper}>
+          <div>
+            <Image src={FingerSVG} alt={"swipe"} />
+          </div>
+          <div>
+            <Image src={FingerSVG} alt={"swipe"} />
+          </div>
+        </div>
       </div>
 
       <div className={`page ${bookStyles.page}`}>
@@ -81,6 +123,14 @@ export default async function Page({ params }: { params: { lang: Locale }, }) {
         <div className={bookStyles.content}>
           <Image src={TouristRedTrainImg} alt={'Tourist track red train'} className={bookStyles.popper_baron} />
           <p className={bookStyles.description} dangerouslySetInnerHTML={{ __html: data['7'] }}></p>
+        </div>
+        <div className={`${bookStyles.finger_wrapper} ${bookStyles.finger_wrapper_left}`}>
+          <div>
+            <Image src={FingerSVG} alt={"swipe"} />
+          </div>
+          <div>
+            <Image src={FingerSVG} alt={"swipe"} />
+          </div>
         </div>
       </div>
 
@@ -93,6 +143,10 @@ export default async function Page({ params }: { params: { lang: Locale }, }) {
           </video>
           <p className={bookStyles.description} dangerouslySetInnerHTML={{ __html: data['8'] }}></p>
         </div>
+      </div>
+
+      <div className={`page ${bookStyles.page}`}>
+        <LeftPage className={bookStyles.page_bg} />
       </div>
 
     </Book>
