@@ -47,9 +47,9 @@ export default async function Page({ params }: { params: { lang: Locale }, }) {
           <div>
             <Image src={FingerSVG} alt={"swipe"} />
           </div>
-          <div>
+          {/* <div>
             <Image src={FingerSVG} alt={"swipe"} />
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -63,9 +63,9 @@ export default async function Page({ params }: { params: { lang: Locale }, }) {
           <div>
             <Image src={FingerSVG} alt={"swipe"} />
           </div>
-          <div>
+          {/* <div>
             <Image src={FingerSVG} alt={"swipe"} />
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -79,9 +79,9 @@ export default async function Page({ params }: { params: { lang: Locale }, }) {
           <div>
             <Image src={FingerSVG} alt={"swipe"} />
           </div>
-          <div>
+          {/* <div>
             <Image src={FingerSVG} alt={"swipe"} />
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -95,9 +95,9 @@ export default async function Page({ params }: { params: { lang: Locale }, }) {
           <div>
             <Image src={FingerSVG} alt={"swipe"} />
           </div>
-          <div>
+          {/* <div>
             <Image src={FingerSVG} alt={"swipe"} />
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -111,9 +111,9 @@ export default async function Page({ params }: { params: { lang: Locale }, }) {
           <div>
             <Image src={FingerSVG} alt={"swipe"} />
           </div>
-          <div>
+          {/* <div>
             <Image src={FingerSVG} alt={"swipe"} />
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -126,9 +126,9 @@ export default async function Page({ params }: { params: { lang: Locale }, }) {
           <div>
             <Image src={FingerSVG} alt={"swipe"} />
           </div>
-          <div>
+          {/* <div>
             <Image src={FingerSVG} alt={"swipe"} />
-          </div>
+          </div> */}
         </div>
       </div>
 

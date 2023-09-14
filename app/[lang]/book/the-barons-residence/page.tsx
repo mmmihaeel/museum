@@ -6,7 +6,7 @@ import dynamic from 'next/dynamic';
 const Book = dynamic(() => import('../../../components/Book/Book'), { ssr: false });
 import Image from 'next/image';
 import bookStyles from '../book.module.scss';
-import { LeftPage, RightPage } from '@/app/components/Book/BookPages'; 
+import { LeftPage, RightPage } from '@/app/components/Book/BookPages';
 
 import FingerSVG from "../../../assets/images/book/finger.svg";
 
@@ -38,7 +38,7 @@ export default async function Page({ params }: { params: { lang: Locale }, }) {
       <div className={`page ${bookStyles.page}`}>
         <LeftPage className={bookStyles.page_bg} />
         <div className={bookStyles.content}>
-          <p className={bookStyles.description} dangerouslySetInnerHTML={{ __html:  data['1']}}></p>
+          <p className={bookStyles.description} dangerouslySetInnerHTML={{ __html: data['1'] }}></p>
         </div>
       </div>
 
@@ -46,15 +46,15 @@ export default async function Page({ params }: { params: { lang: Locale }, }) {
         <RightPage className={bookStyles.page_bg} />
         <div className={bookStyles.content}>
           <Image src={ResidenceVillaImg} alt={'villa of a baron'} />
-          <p className={bookStyles.description} dangerouslySetInnerHTML={{ __html:  data['2']}}></p>
+          <p className={bookStyles.description} dangerouslySetInnerHTML={{ __html: data['2'] }}></p>
         </div>
         <div className={bookStyles.finger_wrapper}>
           <div>
             <Image src={FingerSVG} alt={"swipe"} />
           </div>
-          <div>
+          {/* <div>
             <Image src={FingerSVG} alt={"swipe"} />
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -62,15 +62,15 @@ export default async function Page({ params }: { params: { lang: Locale }, }) {
         <LeftPage className={bookStyles.page_bg} />
         <div className={bookStyles.content}>
           <Image src={Residence1954Img} alt={'residence of a baron 1954'} />
-          <p className={bookStyles.description} dangerouslySetInnerHTML={{ __html:  data['3']}}></p>
+          <p className={bookStyles.description} dangerouslySetInnerHTML={{ __html: data['3'] }}></p>
         </div>
         <div className={`${bookStyles.finger_wrapper} ${bookStyles.finger_wrapper_left}`}>
           <div>
             <Image src={FingerSVG} alt={"swipe"} />
           </div>
-          <div>
+          {/* <div>
             <Image src={FingerSVG} alt={"swipe"} />
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -78,15 +78,15 @@ export default async function Page({ params }: { params: { lang: Locale }, }) {
         <RightPage className={bookStyles.page_bg} />
         <div className={bookStyles.content}>
           <Image src={ResidenceGermanImg} alt={'german solder'} />
-          <p className={bookStyles.description} dangerouslySetInnerHTML={{ __html:  data['4']}}></p>
+          <p className={bookStyles.description} dangerouslySetInnerHTML={{ __html: data['4'] }}></p>
         </div>
         <div className={bookStyles.finger_wrapper}>
           <div>
             <Image src={FingerSVG} alt={"swipe"} />
           </div>
-          <div>
+          {/* <div>
             <Image src={FingerSVG} alt={"swipe"} />
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -94,15 +94,15 @@ export default async function Page({ params }: { params: { lang: Locale }, }) {
         <LeftPage className={bookStyles.page_bg} />
         <div className={bookStyles.content}>
           <Image src={RedidenceOfficerImg} alt={'residence of a baron german officer'} className={bookStyles.tourist_walk} />
-          <p className={bookStyles.description} dangerouslySetInnerHTML={{ __html:  data['5']}}></p>
+          <p className={bookStyles.description} dangerouslySetInnerHTML={{ __html: data['5'] }}></p>
         </div>
         <div className={`${bookStyles.finger_wrapper} ${bookStyles.finger_wrapper_left}`}>
           <div>
             <Image src={FingerSVG} alt={"swipe"} />
           </div>
-          <div>
+          {/* <div>
             <Image src={FingerSVG} alt={"swipe"} />
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -110,15 +110,15 @@ export default async function Page({ params }: { params: { lang: Locale }, }) {
         <RightPage className={bookStyles.page_bg} />
         <div className={bookStyles.content}>
           <Image src={RedidenceOfficersImg} alt={'residence of a baron german officers'} />
-          <p className={bookStyles.description} dangerouslySetInnerHTML={{ __html:  data['6']}}></p>
+          <p className={bookStyles.description} dangerouslySetInnerHTML={{ __html: data['6'] }}></p>
         </div>
         <div className={bookStyles.finger_wrapper}>
           <div>
             <Image src={FingerSVG} alt={"swipe"} />
           </div>
-          <div>
+          {/* <div>
             <Image src={FingerSVG} alt={"swipe"} />
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -126,15 +126,15 @@ export default async function Page({ params }: { params: { lang: Locale }, }) {
         <LeftPage className={bookStyles.page_bg} />
         <div className={bookStyles.content}>
           <Image src={Residence2013Img} alt={'residence of a baron 2013'} />
-          <p className={bookStyles.description} dangerouslySetInnerHTML={{ __html:  data['7']}}></p>
+          <p className={bookStyles.description} dangerouslySetInnerHTML={{ __html: data['7'] }}></p>
         </div>
         <div className={`${bookStyles.finger_wrapper} ${bookStyles.finger_wrapper_left}`}>
           <div>
             <Image src={FingerSVG} alt={"swipe"} />
           </div>
-          <div>
+          {/* <div>
             <Image src={FingerSVG} alt={"swipe"} />
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -142,15 +142,15 @@ export default async function Page({ params }: { params: { lang: Locale }, }) {
         <RightPage className={bookStyles.page_bg} />
         <div className={bookStyles.content}>
           <Image src={Residence2015Img} alt={'residence of a baron 2015'} />
-          <p className={bookStyles.description} dangerouslySetInnerHTML={{ __html:  data['8']}}></p>
+          <p className={bookStyles.description} dangerouslySetInnerHTML={{ __html: data['8'] }}></p>
         </div>
         <div className={bookStyles.finger_wrapper}>
           <div>
             <Image src={FingerSVG} alt={"swipe"} />
           </div>
-          <div>
+          {/* <div>
             <Image src={FingerSVG} alt={"swipe"} />
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -158,15 +158,15 @@ export default async function Page({ params }: { params: { lang: Locale }, }) {
         <LeftPage className={bookStyles.page_bg} />
         <div className={bookStyles.content}>
           <Image src={RsidencePastImg} alt={'residence of a baron past'} />
-          <p className={bookStyles.description} dangerouslySetInnerHTML={{ __html:  data['9']}}></p>
+          <p className={bookStyles.description} dangerouslySetInnerHTML={{ __html: data['9'] }}></p>
         </div>
         <div className={`${bookStyles.finger_wrapper} ${bookStyles.finger_wrapper_left}`}>
           <div>
             <Image src={FingerSVG} alt={"swipe"} />
           </div>
-          <div>
+          {/* <div>
             <Image src={FingerSVG} alt={"swipe"} />
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -174,7 +174,7 @@ export default async function Page({ params }: { params: { lang: Locale }, }) {
         <RightPage className={bookStyles.page_bg} />
         <div className={bookStyles.content}>
           <Image src={RsidenceTodayImg} alt={'residence of a baron today'} />
-          <p className={bookStyles.description} dangerouslySetInnerHTML={{ __html:  data['10']}}></p>
+          <p className={bookStyles.description} dangerouslySetInnerHTML={{ __html: data['10'] }}></p>
         </div>
       </div>
 
@@ -182,6 +182,6 @@ export default async function Page({ params }: { params: { lang: Locale }, }) {
         <LeftPage className={bookStyles.page_bg} />
       </div>
 
-  </Book>
+    </Book>
   );
 } 
