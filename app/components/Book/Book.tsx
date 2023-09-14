@@ -15,7 +15,6 @@ type props = {
 const Book: React.FC<props> = (props) => {
     const { children, className } = props;
     const elRef = useRef<HTMLDivElement | null>(null);
-
     const options = {
         // width: (window.innerHeight * 0.8677) * 1.556,
         // height: window.innerHeight * 0.8677,
