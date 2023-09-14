@@ -47,10 +47,10 @@ echo "Copied ./open-presentation.bat command to $build_dir"
 
 echo "Copied all build files to $build_dir"
 
-nssm install museumPresentation "D:\Work\museum\build\start.bat"
+# nssm install museumPresentation "D:\museum\build\start.bat"
 
-nssm start museumPresentation
+# nssm start museumPresentation
 
-nssm install museumPresentationOpen "D:\Work\museum\build\open-presentation.bat"
+# nssm install museumPresentationOpen "D:\museum\build\open-presentation.bat"
 
-nssm start museumPresentationOpen
+# nssm start museumPresentationOpen

@@ -1,3 +1,3 @@
-cd D:\Work\museum\build
+cd D:\museum\build
 
 npm run start

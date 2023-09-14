@@ -36,9 +36,17 @@ export function middleware(request: NextRequest) {
     locale => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
   );
 
+  if (request.nextUrl.pathname.endsWith('/')) {
+    return NextResponse.redirect(
+      new URL(
+        `/${i18n.defaultLocale}${pathname.startsWith('/') ? '' : '/'}${pathname}`,
+        request.url
+      )
+    );
+  }
+
   if (pathnameIsMissingLocale && !isStaticAssets(request.nextUrl.pathname)) {
     const locale = getLocale(request);
-    console.log(request.nextUrl.pathname);
     return NextResponse.redirect(
       new URL(
         `/${locale}${pathname.startsWith('/') ? '' : '/'}${pathname}`,
